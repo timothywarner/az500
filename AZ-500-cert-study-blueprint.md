@@ -1,4 +1,4 @@
-# Exam AZ-300/AZ-301 Certification Study Blueprint
+# Exam AZ-500 Certification Study Blueprint
 
 ## About the Exam
 
