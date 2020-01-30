@@ -1,34 +1,33 @@
 # Exam AZ-500 Certification Study Blueprint
 
-## About the Exam
+## About the AZ-500 Exam
 
-* [AZ-300 exam page](https://www.microsoft.com/en-us/learning/exam-az-300.aspx)
+* [AZ-500 exam page](https://docs.microsoft.com/en-us/learn/certifications/exams/az-500)
 * [MS Learning Exam Policies and FAQ](https://www.microsoft.com/en-us/learning/certification-exam-policies.aspx)
 * [Online proctored testing](https://www.microsoft.com/en-us/learning/online-exams.aspx)
 
 ## Practice exams
 
 * [MS Learning offers](https://www.microsoft.com/en-us/learning/offers.aspx)
-* [MeasureUp AZ-300](https://www.measureup.com/microsoft-azure-architect-technologies.html)
+* [MeasureUp AZ-500](https://www.measureup.com/az-500-microsoft-azure-security-technologies.html)
+* [Whizlabs AZ-500] (https://www.whizlabs.com/microsoft-azure-certification-az-500/)
 
-## Hands-on practice
+## Hands-on labs
 
-* [Microsoft Learn](https://docs.microsoft.com/en-us/learn/browse/?roles=solution-architect)
-* [Azure Citadel](https://azurecitadel.com/)
+* [Microsoft Learn - Azure Security Engineer](https://docs.microsoft.com/en-us/learn/browse/?roles=security-engineer)
+* [Azure Citadel Security Labs](https://azurecitadel.com/security/)
+* [Skill Me Up AZ-500](https://skillmeup.com/course/bypath/az-500-microsoft-azure-security-technologies)
 
-## Theory - Azure Architecture
+## Theory - Azure Security
 
-* [Azure Architecture Center](https://docs.microsoft.com/bs-cyrl-ba/azure/architecture/)
-* [Cloud Adoption Framework](https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/)
-* [Azure Application Architecture Guide](https://docs.microsoft.com/en-us/azure/architecture/guide/)
-* [Azure Solutions Architectures](https://azure.microsoft.com/en-us/solutions/architecture/)
-* [Azure Docs](https://docs.microsoft.com/en-us/azure/)
-* [Azure SLAs](https://azure.microsoft.com/en-us/support/legal/sla/)
-* [Azure preview feature terms of use](https://azure.microsoft.com/en-us/support/legal/preview-supplemental-terms/)
+* [Azure Security Documentation](https://docs.microsoft.com/en-us/azure/security/)
+* [Azure Security Best Practices and Patterns](https://docs.microsoft.com/en-us/azure/security/fundamentals/best-practices-and-patterns)
+* [Azure Security best practices whitepaper](https://azure.microsoft.com/en-us/resources/security-best-practices-for-azure-solutions/)
+* [Microsoft Azure Security Center, 2nd Edition](https://www.microsoftpressstore.com/store/microsoft-azure-security-center-9780135752036)
+* []()
 
-## Theory - Online AZ-300 Study Guide
+## Theory - AZ-500 Training and Study Guides
 
-* [Pluralsight Architect Learning Path](https://www.pluralsight.com/role-iq/microsoft-azure-solution-architect)
-* [Pixel Robots](https://pixelrobots.co.uk/2018/09/study-resources-for-the-az-300/)
-* [Azure Greg](https://gregorsuttie.com/2018/10/02/azure-architect-design-az-300-exam/)
-* [Todd Adams](https://github.com/toddbadams/az300)
+* [Pluralsight Azure Security Engineer Learning Path](https://www.pluralsight.com/role-iq/microsoft-azure-security-engineer)
+* [Linux Academy AZ-500](https://linuxacademy.com/course/az-500-microsoft-azure-security-technologies/)
+* [Thomas Thornton AZ-500 Study Guide](https://thomasthornton.cloud/2019/08/23/microsoft-azure-exam-az-500-study-guide/)
