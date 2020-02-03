@@ -6,6 +6,8 @@
 * Vulnerability scanning
 * Azure Monitor
 
+* Azure Sentinel?
+
 ## Secure data and applications
 
 * Azure Advanced Information Protection
@@ -13,6 +15,8 @@
     - Azure SQL ATP
     - Managed storage accounts / SAS tokens
     - Cosmos DB security
+    - Data Lake security
+    - HDInsight security
 * At-rest data encryption
     - Always Encrypted
     - Storage Service Encryption
@@ -23,4 +27,10 @@
 * Key Vault
     - Manage access to vault
     - Manage access to secrets
-    - Integration
+    - Integration with other services
+
+* Security Governance
+    - RBAC
+    - Policy
+    - Templates
+    - Blueprints

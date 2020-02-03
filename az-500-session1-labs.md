@@ -26,9 +26,8 @@
 
 ## Manage security operations
 
-* Azure Monitor
+* Azure Security Center
   - policy management
   - JIT VM Access
-  - Playbooks
+  - Workflow automation (Playbooks)
   - Alerts
-  - Investigations
