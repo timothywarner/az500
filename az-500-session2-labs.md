@@ -10,7 +10,8 @@
 
 ## Secure data and applications
 
-* Azure Advanced Information Protection
+* Azure Information Protection
+*
 * Data platform security
     - Azure SQL ATP
     - Managed storage accounts / SAS tokens
