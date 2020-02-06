@@ -3,16 +3,22 @@
 ## Manage identity and access
 
 * Azure AD product family
+  - Create a new tenant
   - Transferring subscriptions
-  - Dynamic groups / licenses
+
 * App registrations
   * Service principal
   * Admin consent
+
 * Users and groups
+  - Dynamic groups / licenses
+  - MFA with Conditional Access & IdP
   - Azure AD Connect
     - Sync Rules Editor
-  - MFA with Conditional Access & IdP
+
 * Azure AD PIM
+  - Activation
+  - Approval
 
 ## Implement platform protection
 
@@ -22,26 +28,24 @@
   - Azure Front Door
   - Resource firewalls
     + Service endpoint/private link
+
 * Container security
-  * Ingress controller
+  * ACR permissions
+  * Container groups (YAML w/ CLI or template)
+  * AKS Ingress controller
   * CNI plug-in
-  * Container groups
+
 * Host security
-* ARM security
-  - policies
-  - RBAC (built-in and custom)
-    - ACR permissions
+  - Antimalware
+  - Update management
 
 ## Manage security operations
 
 * Azure Security Center
   - Action group for when ASC alert is triggered
-  - policy management
-    - DeployIfNotExist
   - JIT VM Access
   - Workflow automation (Playbooks)
-  - Alerts
 
 * Azure DevOps
-  * Organization
+  * Organizationw
   * Branch policies
