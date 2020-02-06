@@ -1,7 +1,8 @@
 # AZ-500 Session 2 Labs
 
 * Custom role (PowerShell)
-* ASGs (CLI)
+* ASGs (PowerShell)
+* Storage account (CLI)
 
 * Azure DevOps
   * Organization
