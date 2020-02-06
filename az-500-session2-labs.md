@@ -1,13 +1,17 @@
 # AZ-500 Session 2 Labs
 
+* Custom role (PowerShell)
+* ASGs (CLI)
+
+* Azure DevOps
+  * Organization
+  * Branch policies
+  *
 ## Manage security operations, continued
 
-* Diagnostic logging and retention
-* Vulnerability scanning
-* Update Assessment
-  * Scope config
-  * Computer group
-* Azure Monitor
+* Azure Security Center
+  - Policies
+  - Playbooks
 
 * Azure Sentinel
 
@@ -21,23 +25,24 @@
     - Cosmos DB security
     - Data Lake security
     - HDInsight security
+
 * At-rest data encryption
     - Always Encrypted
     - Storage Service Encryption
       - SAS stored access policy
       - AzCopy
     - Azure Disk Encryption
+
 * Application security
     - SSL/TLS certs
     - App Service web app security
     - VM extensions
+
 * Key Vault
     - Manage access to vault
     - Manage access to secrets
     - Integration with other services
-* AKS
-  * CNI plug-in
-  * Ingress controller
+
 * Security Governance
     - Locks
     - RBAC

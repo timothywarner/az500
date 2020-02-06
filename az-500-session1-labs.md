@@ -26,6 +26,9 @@
   - NSGs and ASGs
   - Azure Firewall
   - Azure Front Door
+
+BREAK
+
   - Resource firewalls
     + Service endpoint/private link
 
@@ -45,7 +48,3 @@
   - Action group for when ASC alert is triggered
   - JIT VM Access
   - Workflow automation (Playbooks)
-
-* Azure DevOps
-  * Organizationw
-  * Branch policies
