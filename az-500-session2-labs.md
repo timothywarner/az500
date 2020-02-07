@@ -2,17 +2,17 @@
 
 * Custom role (PowerShell)
 * ASGs (PowerShell)
-* Storage account (CLI)
+* az cosmosdb sql database create (CLI)
 
 * Azure DevOps
   * Organization
   * Branch policies
-  *
+
 ## Manage security operations, continued
 
-* Azure Security Center
+* Azure Security Center  // SHOW MSFT DEMO SUBSCRIPTION
   - Policies
-  - Playbooks
+  - Alerts / Automations
 
 * Azure Sentinel
 
