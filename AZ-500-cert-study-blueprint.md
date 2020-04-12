@@ -1,33 +1,26 @@
 # Exam AZ-500 Certification Study Blueprint
 
-## About the AZ-500 Exam
+## Theoretical Knowledge
+* [Azure Security Documentation](https://docs.microsoft.com/en-us/azure/security/)
+* [Ravikirans AZ-500 Study Guide](https://ravikirans.com/az-500-azure-exam-study-guide/)
+* [Thomas Thornton AZ-500 Study Guide](https://thomasthornton.cloud/2019/08/23/microsoft-azure-exam-az-500-study-guide/)
+* [AzureMentor AZ-500 Study Guide](https://github.com/AzureMentor/Azure-AZ-500-Study-Guide)
+* [Stanislas.io AZ-500 Study Guide](https://stanislas.io/2019/04/25/preparation-guide-for-microsoft-az-500-microsoft-azure-security-technologies-certification/)
 
-* [AZ-500 exam page](https://docs.microsoft.com/en-us/learn/certifications/exams/az-500)
-* [MS Learning Exam Policies and FAQ](https://www.microsoft.com/en-us/learning/certification-exam-policies.aspx)
-* [Online proctored testing](https://www.microsoft.com/en-us/learning/online-exams.aspx)
+## Hands-on Skill Development
+* [Microsoft Learn Security Labs](https://docs.microsoft.com/en-us/learn/browse/?roles=security-engineer)
+* [Linux Academy AZ-500](https://linuxacademy.com/course/az-500-microsoft-azure-security-technologies/)
+* [Cloud Academy AZ-500](https://cloudacademy.com/learning-paths/az-500-exam-preparation-microsoft-azure-security-technologies-650/)
+* [Azure Citadel Security Labs](https://azurecitadel.com/security/)
 
 ## Practice exams
+* [Whizlabs AZ-500 practice exams](https://www.whizlabs.com/microsoft-azure-certification-az-500/)
+* [MeasureUp AZ-500 practice exams](https://www.measureup.com/az-500-microsoft-azure-security-technologies.html)
 
-* [MS Learning offers](https://www.microsoft.com/en-us/learning/offers.aspx)
-* [MeasureUp AZ-500](https://www.measureup.com/az-500-microsoft-azure-security-technologies.html)
-* [Whizlabs AZ-500] (https://www.whizlabs.com/microsoft-azure-certification-az-500/)
-
-## Hands-on labs
-
-* [Microsoft Learn - Azure Security Engineer](https://docs.microsoft.com/en-us/learn/browse/?roles=security-engineer)
-* [Azure Citadel Security Labs](https://azurecitadel.com/security/)
-* [Skill Me Up AZ-500](https://skillmeup.com/course/bypath/az-500-microsoft-azure-security-technologies)
-
-## Theory - Azure Security
-
-* [Azure Security Documentation](https://docs.microsoft.com/en-us/azure/security/)
-* [Azure Security Best Practices and Patterns](https://docs.microsoft.com/en-us/azure/security/fundamentals/best-practices-and-patterns)
-* [Azure Security best practices whitepaper](https://azure.microsoft.com/en-us/resources/security-best-practices-for-azure-solutions/)
-* [Microsoft Azure Security Center, 2nd Edition](https://www.microsoftpressstore.com/store/microsoft-azure-security-center-9780135752036)
-* []()
-
-## Theory - AZ-500 Training and Study Guides
-
-* [Pluralsight Azure Security Engineer Learning Path](https://www.pluralsight.com/role-iq/microsoft-azure-security-engineer)
-* [Linux Academy AZ-500](https://linuxacademy.com/course/az-500-microsoft-azure-security-technologies/)
-* [Thomas Thornton AZ-500 Study Guide](https://thomasthornton.cloud/2019/08/23/microsoft-azure-exam-az-500-study-guide/)
+## Exam-Specific Information
+* [AZ-500 exam page](https://docs.microsoft.com/en-us/learn/certifications/exams/az-500)
+* [Microsoft Certification Exam Policies & FAQs](https://www.microsoft.com/en-us/learning/certification-exam-policies.aspx)
+* [Microsoft Certification Exam Offers](https://www.microsoft.com/en-us/learning/offers.aspx)
+* [Microsoft Online Exams](https://www.microsoft.com/en-us/learning/online-exams.aspx)
+* [Pearson OnVUE Information](https://home.pearsonvue.com/Clients/Microsoft/Online-proctored.aspx)
+*
