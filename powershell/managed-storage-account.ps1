@@ -1,8 +1,8 @@
 #Prefix for resources
-$prefix = "tlw"
+$prefix = "tlw704"
 
 #Basic variables
-$location = "eastus2"
+$location = "eastus"
 $id = Get-Random -Minimum 1000 -Maximum 9999
 
 #Create a resource group for Key Vault
