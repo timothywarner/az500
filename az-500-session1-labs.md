@@ -23,20 +23,20 @@
 ## Implement platform protection
 
 * Network connectivity
-  - NSGs and ASGs
+  - NSGs and ASGs (PowerShell)
+  - Bastion
   - Azure Firewall
   - Azure Front Door
 
 BREAK
 
+  - Managed Identity
   - Resource firewalls
     + Service endpoint/private link
 
 * Container security
   * ACR permissions
   * Container groups (YAML w/ CLI or template)
-  * AKS Ingress controller
-  * CNI plug-in
 
 * Host security
   - Antimalware
