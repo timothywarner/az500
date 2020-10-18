@@ -4,6 +4,13 @@ Get-AzProviderOperation 'Microsoft.Support/*' | Format-Table -Property Operation
 
 Get-AzRoleDefinition -Name 'Reader' | ConvertTo-Json | Out-File 'D:\ReaderSupportRole.json'
 
+# Alertnatively
+(Get-AzRoleDefinition "Virtual Machine Contributor").Actions #NotActions
+
+# Try "VM and Managed Disk Contributor"
+"Microsoft.Compute/Disks*",
+
+
 Get-AzSubscription | Select-Object -Property id
 
 New-AzRoleDefinition -InputFile 'C:\ReaderSupportRole.json'

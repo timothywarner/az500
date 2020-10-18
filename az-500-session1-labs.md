@@ -15,6 +15,7 @@
   - MFA with Conditional Access & IdP
   - Azure AD Connect
     - Sync Rules Editor
+  - Managed Identity
 
 * Azure AD PIM
   - Activation
@@ -30,7 +31,6 @@
 
 BREAK
 
-  - Managed Identity
   - Resource firewalls
     + Service endpoint/private link
 
