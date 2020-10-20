@@ -21,6 +21,10 @@
   - Activation
   - Approval
 
+
+BREAK
+
+
 ## Implement platform protection
 
 * Network connectivity
@@ -29,7 +33,7 @@
   - Azure Firewall
   - Azure Front Door
 
-BREAK
+
 
   - Resource firewalls
     + Service endpoint/private link

@@ -1,20 +1,12 @@
 # AZ-500 Session 2 Labs
 
-## Platform Security
-
+* Emergency elevantion
+* ASG membership
 * Custom RBAC role
 
-* VNets
-  * "Service firewalls"
-  * Service/private endpoints
-
-* Azure DevOps
-  * Branch policies
-  * Key Vault tasks
-
 * VMs
+  * SSE / ADE
   * Extensions
-  * Log analytics / Kusto
   * Antimalware
   * Update management
 
@@ -22,17 +14,19 @@
     - SSL/TLS certs
     - Network integration
 
+* Containers
+  * ACR authentication
+  *
+* Azure Security Center
+  * JIT VM Access
 * Azure Sentinel
 
 ## Data Security
 
 * At-rest data encryption
   * SSE storage accounts
+  * Container security
   * SSE Azure SQL / Cosmos
-
-* VM storage security
-  * SSE key management
-  * ADE
 
 * Azure SQL Database
   * Always Encrypted
