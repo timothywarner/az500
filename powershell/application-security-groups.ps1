@@ -1,9 +1,11 @@
-# get a reference to our ASG
-$asg = Get-AzApplicationSecurityGroup -ResourceGroupName oreilly -Name oreilly-asg
+# create the ASGs
+$webAsg = New-AzApplicationSecurityGroup -ResourceGroupName 'Load-Balancer' -Name webASG -Location 'eastus2'
 
-# get a reference to VM's vNICs and associate with ASG
-$winNic = Get-AzNetworkInterface -Name win-victim-1936 -ResourceGroupName oreilly
+# Assign vNICs to ASG
+$webNic = Get-AzNetworkInterface -Name 'myNIC0' -ResourceGroupName 'Load-Balancer'
+$webNic.IpConfigurations[0].ApplicationSecurityGroups = $webAsg
+Set-AzNetworkInterface -NetworkInterface $webNic
 
-$winNic.IpConfigurations[0].ApplicationSecurityGroups = $asg
-
-Set-AzNetworkInterface -NetworkInterface $winNic
+$webNic = Get-AzNetworkInterface -Name 'myNIC1' -ResourceGroupName 'Load-Balancer'
+$webNic.IpConfigurations[0].ApplicationSecurityGroups = $webAsg
+Set-AzNetworkInterface -NetworkInterface $webNic

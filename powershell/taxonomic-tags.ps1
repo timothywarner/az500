@@ -7,7 +7,7 @@
 (Get-AzResource -ResourceId /subscriptions/<subscription-id>/resourceGroups/oreilly/providers/Microsoft.Storage/storageAccounts/<storage-name>).Tags
 
 # See existing tags for a named resource
-(Get-AzResource -ResourceName 'TimKV' -ResourceGroupName 'oreilly').Tags
+(Get-AzResource -ResourceName 'oreilly-keyvault1' -ResourceGroupName 'oreilly').Tags
 
 # Get resource groups that have a specific tag
 (Get-AzResourceGroup -Tag @{ Dept = "Finance" }).ResourceGroupName
@@ -19,7 +19,7 @@
 (Get-AzResource -TagName Dept).Name
 
 # Add tags to RG without existing tags
-Set-AzResourceGroup -Name oreilly -Tag @{ Division = "IT"; Group = "QZ" }
+Set-AzResourceGroup -Name oreilly -Tag @{ Dept = "IT"; Environment = "Test" }
 
 # Add tags to RG that has existing tags
 $tags = (Get-AzResourceGroup -Name oreilly).Tags

@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29230.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "VM Copy Loops", "VM Copy Loops.deployproj", "{D668F964-6F42-4175-8457-4EA99FB2E61F}"
+EndProject
+Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "S2S-VPN", "bin\S2S-VPN\S2S-VPN.deployproj", "{117C49F7-6397-4A75-8DBB-37ED1E1ED3AD}"
+EndProject
+Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "App-Gateway", "App-Gateway\App-Gateway.deployproj", "{7B19F27C-58A4-4670-82CA-6D86109559FD}"
+EndProject
+Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "AKS", "AKS\AKS.deployproj", "{5316C7A1-F97F-4389-8C0F-78029A1DDB43}"
+EndProject
+Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "WebApp+SQL", "WebApp+SQL\WebApp+SQL.deployproj", "{8CD8C986-6352-439E-B8F2-96E0B6882933}"
+EndProject
+Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "KeyVault", "KeyVault\KeyVault.deployproj", "{043153B4-7C7D-4BCF-8B43-56782D6A3824}"
+EndProject
+Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "AppService+Container", "AppService+Container\AppService+Container.deployproj", "{719C3044-FE01-45F1-9134-BF13BD4BEDF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D668F964-6F42-4175-8457-4EA99FB2E61F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D668F964-6F42-4175-8457-4EA99FB2E61F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D668F964-6F42-4175-8457-4EA99FB2E61F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D668F964-6F42-4175-8457-4EA99FB2E61F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{117C49F7-6397-4A75-8DBB-37ED1E1ED3AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{117C49F7-6397-4A75-8DBB-37ED1E1ED3AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{117C49F7-6397-4A75-8DBB-37ED1E1ED3AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{117C49F7-6397-4A75-8DBB-37ED1E1ED3AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B19F27C-58A4-4670-82CA-6D86109559FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B19F27C-58A4-4670-82CA-6D86109559FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B19F27C-58A4-4670-82CA-6D86109559FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B19F27C-58A4-4670-82CA-6D86109559FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5316C7A1-F97F-4389-8C0F-78029A1DDB43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5316C7A1-F97F-4389-8C0F-78029A1DDB43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5316C7A1-F97F-4389-8C0F-78029A1DDB43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5316C7A1-F97F-4389-8C0F-78029A1DDB43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CD8C986-6352-439E-B8F2-96E0B6882933}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CD8C986-6352-439E-B8F2-96E0B6882933}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CD8C986-6352-439E-B8F2-96E0B6882933}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CD8C986-6352-439E-B8F2-96E0B6882933}.Release|Any CPU.Build.0 = Release|Any CPU
+		{043153B4-7C7D-4BCF-8B43-56782D6A3824}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{043153B4-7C7D-4BCF-8B43-56782D6A3824}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{043153B4-7C7D-4BCF-8B43-56782D6A3824}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{043153B4-7C7D-4BCF-8B43-56782D6A3824}.Release|Any CPU.Build.0 = Release|Any CPU
+		{719C3044-FE01-45F1-9134-BF13BD4BEDF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{719C3044-FE01-45F1-9134-BF13BD4BEDF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{719C3044-FE01-45F1-9134-BF13BD4BEDF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{719C3044-FE01-45F1-9134-BF13BD4BEDF3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A6F06312-9D4B-4AAA-A643-45DFFE7E1FB5}
+	EndGlobalSection
+EndGlobal
