@@ -1,8 +1,21 @@
 # AZ-500 Session 2 Labs
 
-* Emergency elevantion
-* ASG membership
-* Custom RBAC role
+
+* Container security
+  * ACR permissions
+  * Container groups (YAML w/ CLI or template)
+
+* Host security
+  - Antimalware
+  - Update management
+
+## Manage security operations
+
+* Azure Security Center
+  - Action group for when ASC alert is triggered
+  - JIT VM Access
+  - Workflow automation (Playbooks)
+
 
 * VMs
   * SSE / ADE
@@ -16,10 +29,7 @@
 
 * Containers
   * ACR authentication
-  *
 * Azure Security Center
-  * JIT VM Access
-* Azure Sentinel
 
 ## Data Security
 
@@ -31,11 +41,3 @@
 * Azure SQL Database
   * Always Encrypted
 
-* Azure Information Protection
-
-* Security Governance
-    - Locks
-    - RBAC
-    - Policy
-    - Templates
-    - Blueprints
