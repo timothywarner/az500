@@ -1,5 +1,79 @@
 # AZ-500 Session 2 Labs
 
+## Platform security
+
+### Virtual machines
+
+* ARM template
+* Key Vault
+* Solutions
+  * Antimalware
+  * Update management
+
+### Networks
+
+* NSGs
+* Firewall
+* Service endpoints
+* Resource firewalls
+
+## Data security
+
+### Storage accounts
+
+* Keys, Azure AD auth
+* SAS and stored access policy
+* Defender
+
+### Azure SQL Database
+
+* TDE
+* Always Encrypted
+* Network firewall
+
+### Cosmos DB
+
+* CMK
+* Network firewall
+* TDE
+
+## Accounting
+
+* Diagnostics logging
+* Log Analytics
+* Azure Security Center
+* Sentinel
+
+### Exam Stuff
+
+* Item types
+* Practice tests
+* Registration/online testing
+* After the exam (next steps)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 * Container security
   * ACR permissions
