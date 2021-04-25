@@ -6,6 +6,7 @@
 * [Thomas Thornton AZ-500 Study Guide](https://thomasthornton.cloud/2019/08/23/microsoft-azure-exam-az-500-study-guide/)
 * [AzureMentor AZ-500 Study Guide](https://github.com/AzureMentor/Azure-AZ-500-Study-Guide)
 * [Stanislas.io AZ-500 Study Guide](https://stanislas.io/2019/04/25/preparation-guide-for-microsoft-az-500-microsoft-azure-security-technologies-certification/)
+* [Tim's ARM template tutorial (YouTube)](https://timwinfo-my.sharepoint.com/:x:/g/personal/tim_timw_info/EQRooL1BhnRMjaIx6WEovRYBDXbzHOI1CrtpNls3zesDHw?rtime=Y5YgZwoI2Ug)
 
 ## Hands-on Skill Development
 * [Microsoft Learn Security Labs](https://docs.microsoft.com/en-us/learn/browse/?roles=security-engineer)
@@ -23,4 +24,4 @@
 * [Microsoft Certification Exam Offers](https://www.microsoft.com/en-us/learning/offers.aspx)
 * [Microsoft Online Exams](https://www.microsoft.com/en-us/learning/online-exams.aspx)
 * [Pearson OnVUE Information](https://home.pearsonvue.com/Clients/Microsoft/Online-proctored.aspx)
-*
+*[ Tim's online testing tutorial (YouTube)](https://www.youtube.com/watch?v=myf6r5nulj0)
