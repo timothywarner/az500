@@ -4,29 +4,35 @@
 
 ### Create AAD tenant and transfer sub!
 
-* aadc options
+* AADC options
 * AAD portal and user settings
-* AAD IdP
-* App reg / managed identity
-* PIM
+    * App reg / MSI
 * MFA
+    * AAD IdP
+    * Conditional Access
+* PIM
 * AUs
-* app registrations
 
 ## Implement Platform Protection
 
-* endpoints
-* locks
-* ARM templates
-* JIT VM Access
-* update management antimalware solutions
-* ACR trusted images
-* AKS CNI plugin & ingress controller
-* AA DSC
-* Azure Firewall, routing
-* ACI YAML
-* VNets, NSGs
-* log analytics
+* arm templates
+* networks
+    * nsgs
+    * routes
+    * endpoints
+    * routing
+    * Firewall
+    * Bastion
+* Config mgmt
+    * DSC
+    * Locks
+    * JIT VM Access
+    * update management antimalware solutions
+* Containers
+    * ACR trusted images
+    * AKS CNI plugin & ingress controller
+* Monitoring
+    * Log Analytics
 
 
 
