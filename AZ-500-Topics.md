@@ -7,12 +7,11 @@
 * aadc options
 * AAD portal and user settings
 * AAD IdP
+* App reg / managed identity
 * PIM
 * MFA
 * AUs
-* billing administtrator transfer
 * app registrations
-* management groups
 
 ## Implement Platform Protection
 
@@ -30,9 +29,20 @@
 * log analytics
 
 
+
+
+
+
+
+
+
+
+
+
 ## Manage Security Operations
 
 * custom rbac roles
+* management groups
 * user access admin
 * action groups
 * alerts and their states: new, ack, closed
