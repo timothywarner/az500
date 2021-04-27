@@ -1,0 +1,48 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "adminUsername": {
+            "value": "tim"
+        },
+        "adminPassword": {
+            "reference": {
+                "keyVault": {
+                    "id": "/subscriptions/2fbf906e-1101-4bc0-b64f-adc44e462fff/resourceGroups/TIM/providers/Microsoft.KeyVault/vaults/tim-keyvault-001"
+                },
+                "secretName": "timvmpw"
+            }
+        },
+        "dnsLabelPrefix": {
+            "value": "twvm1dns"
+        },
+        "publicIpName": {
+            "value": "twaz304pip1"
+        },
+        "OSVersion": {
+            "value": "2019-Datacenter"
+        },
+        "vmSize": {
+            "value": "Standard_B2ms"
+        },
+        "vmName": {
+            "value": "simple-vm"
+        },
+        "nicPrefix": {
+            "value": "vmnicprefix"
+        },
+        "vnetName": {
+            "value": "oreilly-vnet"
+        },
+        "vnetAddressPrefix": {
+            "value": "10.10.0.0/16"
+        },
+        "subnetName": {
+            "value": "workload"
+        },
+        "subnetPrefix": {
+            "value": "10.10.2.0/24"
+        }
+
+    }
+}

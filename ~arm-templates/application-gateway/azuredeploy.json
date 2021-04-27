@@ -1,0 +1,307 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "type": "String"
+        },
+        "applicationGatewayName": {
+            "type": "String"
+        },
+        "tier": {
+            "type": "String"
+        },
+        "skuSize": {
+            "type": "String"
+        },
+        "capacity": {
+            "defaultValue": 2,
+            "type": "Int"
+        },
+        "subnetName": {
+            "type": "String"
+        },
+        "zones": {
+            "type": "Array"
+        },
+        "publicIpAddressName": {
+            "type": "String"
+        },
+        "sku": {
+            "type": "String"
+        },
+        "allocationMethod": {
+            "type": "String"
+        },
+        "publicIpZones": {
+            "type": "Array"
+        },
+        "autoScaleMaxCapacity": {
+            "type": "Int"
+        }
+    },
+    "variables": {
+        "vnetId": "/subscriptions/2fbf906e-1101-4bc0-b64f-adc44e462fff/resourceGroups/oreilly/providers/Microsoft.Network/virtualNetworks/oreilly-vnet",
+        "publicIPRef": "[resourceId('Microsoft.Network/publicIPAddresses/', parameters('publicIpAddressName'))]",
+        "subnetRef": "[concat(variables('vnetId'), '/subnets/', parameters('subnetName'))]",
+        "applicationGatewayId": "[resourceId('Microsoft.Network/applicationGateways', parameters('applicationGatewayName'))]"
+    },
+    "resources": [
+        {
+            "type": "Microsoft.Network/applicationGateways",
+            "apiVersion": "2019-09-01",
+            "name": "[parameters('applicationGatewayName')]",
+            "location": "[parameters('location')]",
+            "dependsOn": [
+                "[concat('Microsoft.Network/publicIPAddresses/', parameters('publicIpAddressName'))]"
+            ],
+            "tags": {},
+            "zones": "[parameters('zones')]",
+            "properties": {
+                "sku": {
+                    "name": "[parameters('skuSize')]",
+                    "tier": "[parameters('tier')]"
+                },
+                "gatewayIPConfigurations": [
+                    {
+                        "name": "appGatewayIpConfig",
+                        "properties": {
+                            "subnet": {
+                                "id": "[variables('subnetRef')]"
+                            }
+                        }
+                    }
+                ],
+                "frontendIPConfigurations": [
+                    {
+                        "name": "appGwPublicFrontendIp",
+                        "properties": {
+                            "PublicIPAddress": {
+                                "id": "[variables('publicIPRef')]"
+                            }
+                        }
+                    }
+                ],
+                "frontendPorts": [
+                    {
+                        "name": "port_80",
+                        "properties": {
+                            "Port": 80
+                        }
+                    }
+                ],
+                "backendAddressPools": [
+                    {
+                        "name": "backend-pool",
+                        "properties": {
+                            "backendAddresses": []
+                        }
+                    }
+                ],
+                "backendHttpSettingsCollection": [
+                    {
+                        "name": "http-settings",
+                        "properties": {
+                            "Port": 80,
+                            "Protocol": "Http",
+                            "cookieBasedAffinity": "Disabled",
+                            "requestTimeout": 20
+                        }
+                    }
+                ],
+                "httpListeners": [
+                    {
+                        "name": "listener-http",
+                        "properties": {
+                            "frontendIPConfiguration": {
+                                "id": "[concat(variables('applicationGatewayId'), '/frontendIPConfigurations/appGwPublicFrontendIp')]"
+                            },
+                            "frontendPort": {
+                                "id": "[concat(variables('applicationGatewayId'), '/frontendPorts/port_80')]"
+                            },
+                            "protocol": "Http",
+                            "sslCertificate": null
+                        }
+                    }
+                ],
+                "requestRoutingRules": [
+                    {
+                        "Name": "HTTP",
+                        "properties": {
+                            "RuleType": "Basic",
+                            "httpListener": {
+                                "id": "[concat(variables('applicationGatewayId'), '/httpListeners/listener-http')]"
+                            },
+                            "backendAddressPool": {
+                                "id": "[concat(variables('applicationGatewayId'), '/backendAddressPools/backend-pool')]"
+                            },
+                            "backendHttpSettings": {
+                                "id": "[concat(variables('applicationGatewayId'), '/backendHttpSettingsCollection/http-settings')]"
+                            }
+                        }
+                    }
+                ],
+                "enableHttp2": false,
+                "sslCertificates": [],
+                "probes": [],
+                "autoscaleConfiguration": {
+                    "minCapacity": "[parameters('capacity')]",
+                    "maxCapacity": "[parameters('autoScaleMaxCapacity')]"
+                }
+            }
+        },
+        {
+            "type": "Microsoft.Network/publicIPAddresses",
+            "apiVersion": "2019-02-01",
+            "name": "[parameters('publicIpAddressName')]",
+            "location": "[parameters('location')]",
+            "sku": {
+                "name": "[parameters('sku')]"
+            },
+            "zones": "[parameters('publicIpZones')]",
+            "properties": {
+                "publicIPAllocationMethod": "[parameters('allocationMethod')]"
+            }
+        },
+        {
+            "type": "Microsoft.Resources/deployments",
+            "apiVersion": "2017-05-10",
+            "name": "nic1-20210330082219",
+            "dependsOn": [
+                "[concat('Microsoft.Network/applicationGateways/', parameters('applicationGatewayName'))]"
+            ],
+            "properties": {
+                "mode": "Incremental",
+                "template": {
+                    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+                    "contentVersion": "1.0.0.0",
+                    "parameters": {},
+                    "variables": {},
+                    "resources": [
+                        {
+                            "name": "nic1",
+                            "id": "/subscriptions/2fbf906e-1101-4bc0-b64f-adc44e462fff/resourceGroups/oreilly/providers/Microsoft.Network/networkInterfaces/nic1",
+                            "location": "eastus",
+                            "properties": {
+                                "provisioningState": "Succeeded",
+                                "resourceGuid": "1019c06c-bad0-4053-bca9-39207811f919",
+                                "ipConfigurations": [
+                                    {
+                                        "name": "ipconfig1",
+                                        "id": "/subscriptions/2fbf906e-1101-4bc0-b64f-adc44e462fff/resourceGroups/oreilly/providers/Microsoft.Network/networkInterfaces/nic1/ipConfigurations/ipconfig1",
+                                        "etag": "W/\"4a0581b5-2556-43a1-a6a0-20f021c7d34e\"",
+                                        "type": "Microsoft.Network/networkInterfaces/ipConfigurations",
+                                        "properties": {
+                                            "provisioningState": "Succeeded",
+                                            "privateIPAddress": "10.10.1.4",
+                                            "privateIPAllocationMethod": "Dynamic",
+                                            "subnet": {
+                                                "id": "/subscriptions/2fbf906e-1101-4bc0-b64f-adc44e462fff/resourceGroups/oreilly/providers/Microsoft.Network/virtualNetworks/oreilly-vnet/subnets/default"
+                                            },
+                                            "primary": true,
+                                            "privateIPAddressVersion": "IPv4",
+                                            "applicationGatewayBackendAddressPools": [
+                                                {
+                                                    "id": "/subscriptions/2fbf906e-1101-4bc0-b64f-adc44e462fff/resourceGroups/oreilly/providers/Microsoft.Network/applicationGateways/twaz304appgateway/backendAddressPools/backend-pool"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "dnsSettings": {
+                                    "dnsServers": [],
+                                    "appliedDnsServers": [],
+                                    "internalDomainNameSuffix": "n2fsgog5iiouve0yh0mjdu3p0b.bx.internal.cloudapp.net"
+                                },
+                                "macAddress": "00-0D-3A-8B-7F-A1",
+                                "enableAcceleratedNetworking": false,
+                                "enableIPForwarding": false,
+                                "primary": true,
+                                "virtualMachine": {
+                                    "id": "/subscriptions/2fbf906e-1101-4bc0-b64f-adc44e462fff/resourceGroups/oreilly/providers/Microsoft.Compute/virtualMachines/oreilly-vm-1"
+                                },
+                                "hostedWorkloads": [],
+                                "tapConfigurations": []
+                            },
+                            "type": "Microsoft.Network/networkInterfaces",
+                            "apiVersion": "2018-10-01",
+                            "dependsOn": []
+                        }
+                    ]
+                },
+                "parameters": {}
+            },
+            "resourceGroup": "oreilly"
+        },
+        {
+            "type": "Microsoft.Resources/deployments",
+            "apiVersion": "2017-05-10",
+            "name": "nic2-20210330082219",
+            "dependsOn": [
+                "[concat('Microsoft.Network/applicationGateways/', parameters('applicationGatewayName'))]"
+            ],
+            "properties": {
+                "mode": "Incremental",
+                "template": {
+                    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+                    "contentVersion": "1.0.0.0",
+                    "parameters": {},
+                    "variables": {},
+                    "resources": [
+                        {
+                            "name": "nic2",
+                            "id": "/subscriptions/2fbf906e-1101-4bc0-b64f-adc44e462fff/resourceGroups/oreilly/providers/Microsoft.Network/networkInterfaces/nic2",
+                            "location": "eastus",
+                            "properties": {
+                                "provisioningState": "Succeeded",
+                                "resourceGuid": "60f8ad7f-c1b1-4b06-9cec-c441eac145a8",
+                                "ipConfigurations": [
+                                    {
+                                        "name": "ipconfig1",
+                                        "id": "/subscriptions/2fbf906e-1101-4bc0-b64f-adc44e462fff/resourceGroups/oreilly/providers/Microsoft.Network/networkInterfaces/nic2/ipConfigurations/ipconfig1",
+                                        "etag": "W/\"f416540f-2987-4ec8-a5e5-435ee3b7818e\"",
+                                        "type": "Microsoft.Network/networkInterfaces/ipConfigurations",
+                                        "properties": {
+                                            "provisioningState": "Succeeded",
+                                            "privateIPAddress": "10.10.1.5",
+                                            "privateIPAllocationMethod": "Dynamic",
+                                            "subnet": {
+                                                "id": "/subscriptions/2fbf906e-1101-4bc0-b64f-adc44e462fff/resourceGroups/oreilly/providers/Microsoft.Network/virtualNetworks/oreilly-vnet/subnets/default"
+                                            },
+                                            "primary": true,
+                                            "privateIPAddressVersion": "IPv4",
+                                            "applicationGatewayBackendAddressPools": [
+                                                {
+                                                    "id": "/subscriptions/2fbf906e-1101-4bc0-b64f-adc44e462fff/resourceGroups/oreilly/providers/Microsoft.Network/applicationGateways/twaz304appgateway/backendAddressPools/backend-pool"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "dnsSettings": {
+                                    "dnsServers": [],
+                                    "appliedDnsServers": [],
+                                    "internalDomainNameSuffix": "n2fsgog5iiouve0yh0mjdu3p0b.bx.internal.cloudapp.net"
+                                },
+                                "macAddress": "00-0D-3A-8C-A8-38",
+                                "enableAcceleratedNetworking": false,
+                                "enableIPForwarding": false,
+                                "primary": true,
+                                "virtualMachine": {
+                                    "id": "/subscriptions/2fbf906e-1101-4bc0-b64f-adc44e462fff/resourceGroups/oreilly/providers/Microsoft.Compute/virtualMachines/oreilly-vm-2"
+                                },
+                                "hostedWorkloads": [],
+                                "tapConfigurations": []
+                            },
+                            "type": "Microsoft.Network/networkInterfaces",
+                            "apiVersion": "2018-10-01",
+                            "dependsOn": []
+                        }
+                    ]
+                },
+                "parameters": {}
+            },
+            "resourceGroup": "oreilly"
+        }
+    ]
+}

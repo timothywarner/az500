@@ -1,0 +1,26 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "serverName": {
+            "value": "twaz303sqlserver1"
+        },
+        "secondaryServerName": {
+            "value": "twaz303sqlserver2"
+        },
+        "sqlDBName": {
+            "value": "aworks"
+        },
+        "administratorLogin": {
+            "value": "tim"
+        },
+        "administratorLoginPassword": {
+            "reference": {
+                "keyVault": {
+                    "id": "/subscriptions/2fbf906e-1101-4bc0-b64f-adc44e462fff/resourceGroups/TIM/providers/Microsoft.KeyVault/vaults/tim-keyvault-001"
+                },
+                "secretName": "timvmpw"
+            }
+        }
+    }
+}
