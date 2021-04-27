@@ -39,28 +39,36 @@
 
 
 
+## Content Catch-up
 
-
-
-
-
+* ARM template (deploy VM)
+  * Store secrets in key vault
+  * Review Key Vault
 
 ## Manage Security Operations
 
-* custom rbac roles
-* management groups
-* user access admin
-* action groups
-* alerts and their states: new, ack, closed
-* enable diagnostics
-* sentinel playbooks for automated response
-    * KQL query to detect threats
-*
+* Management scopes
+  * Management groups
+  * RBAC
+
+* Blueprints
+  * Policy
+
+* Security Center
+  * Sentinel
+    * Playbooks
 
 ## Secure data and applications
 
-* stored access policy
-* app service tls
-* app registrations
-* blueprints
-*
+* Storage account
+  * Stored access policy
+
+* Azure SQL
+
+* Cosmos DB
+
+* AKS
+
+* Monitoring
+  * Enable diag
+  * KQL
