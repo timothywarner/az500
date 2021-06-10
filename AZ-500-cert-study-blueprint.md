@@ -5,6 +5,8 @@
 * [Azure docs](https://docs.microsoft.com/en-us/azure/)
 * [Azure Security Documentation](https://docs.microsoft.com/en-us/azure/security/)
 * [Tim's ARM template tutorial (YouTube)](https://timwinfo-my.sharepoint.com/:x:/g/personal/tim_timw_info/EQRooL1BhnRMjaIx6WEovRYBDXbzHOI1CrtpNls3zesDHw?rtime=Y5YgZwoI2Ug)
+* [Sam Cogan's ARM template tutorial](https://www.youtube.com/watch?v=9EpBiud48Ao)
+* [Adam Marczak's ARM template tutorial](https://www.youtube.com/watch?v=Ge_Sp-1lWZ4)
 * [Azure Security Center docs](https://docs.microsoft.com/en-us/azure/security-center/)
 * [Azure Sentinel docs](https://docs.microsoft.com/en-us/azure/sentinel/)
 
