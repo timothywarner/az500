@@ -1,0 +1,38 @@
+{
+    "properties": {
+        "blueprintId": "/providers/Microsoft.Management/managementGroups/{YourMG}/providers/Microsoft.Blueprint/blueprints/MyBlueprint",
+        "resourceGroups": {
+            "storageRG": {
+                "name": "StorageAccount",
+                "location": "eastus2"
+            }
+        },
+        "parameters": {
+            "storageAccountType": {
+                "value": "Standard_GRS"
+            },
+            "tagName": {
+                "value": "CostCenter"
+            },
+            "tagValue": {
+                "value": "ContosoIT"
+            },
+            "contributors": {
+                "value": [
+                    "7be2f100-3af5-4c15-bcb7-27ee43784a1f",
+                    "38833b56-194d-420b-90ce-cff578296714"
+                ]
+            },
+            "owners": {
+                "value": [
+                    "44254d2b-a0c7-405f-959c-f829ee31c2e7",
+                    "316deb5f-7187-4512-9dd4-21e7798b0ef9"
+                ]
+            }
+        }
+    },
+    "identity": {
+        "type": "systemAssigned"
+    },
+    "location": "westus"
+}

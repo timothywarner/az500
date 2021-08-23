@@ -1,0 +1,12 @@
+{
+  "kind": "roleAssignment",
+  "properties": {
+    "displayName": "Melissa Gaughan (melissa@timw.info) : Contributor",
+    "dependsOn": [],
+    "roleDefinitionId": "/providers/Microsoft.Authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+    "principalIds": [
+      "f798da5e-6a8b-4150-949f-c393dc8314bb"
+    ],
+    "resourceGroup": "SingleRG"
+  }
+}

@@ -1,0 +1,1 @@
+New-Item -Path D:\ -Name webjob.txt -Value "Hi there"

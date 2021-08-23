@@ -1,0 +1,37 @@
+##### Azure Blueprints Learning Resources #####
+
+Azure Blueprints documentation
+https://docs.microsoft.com/en-us/azure/governance/blueprints/
+
+Understand the lifecycle of a blueprint - Azure Blueprints | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/governance/blueprints/concepts/lifecycle
+
+An overview of Azure Blueprints | Azure Friday - YouTube
+https://www.youtube.com/watch?v=cQ9D-d6KkMY
+
+Azure Governance - #3 - Policy & Blueprints - YouTube
+https://www.youtube.com/watch?v=EwO25vecGUo
+
+Sample Blueprint Definitions
+https://github.com/azure/azure-blueprints
+
+Azure Blueprint Tutorial
+https://agazoth.github.io/blogpost/2018/11/11/Azure-Blueprint.html
+
+Import/Export Azure Blueprints using Manage-AzureRMBlueprint PowerShell Script
+https://www.youtube.com/watch?v=SMORUIPhKd8&feature=youtu.be
+
+Azure Blueprints PowerShell
+https://github.com/JimGBritt/AzureBlueprint/
+
+Azure Blueprint PowerShell, Part 2
+https://github.com/Agazoth/AzureBlueprint
+
+Azure Blueprints via Azure DevOps Pipeline​
+https://www.linkedin.com/pulse/azure-blueprints-via-devops-pipeline-paul-towler/
+
+Azure Blueprints pipeline scripts
+https://github.com/Azure/azure-blueprints/tree/master/pipelines-scripts
+
+Azure Blueprints - Visual Studio Extension
+https://marketplace.visualstudio.com/items?itemName=nepeters.azure-blueprints
