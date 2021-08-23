@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "virtualNetworkName": {
+      "value": "new-vnet"
+    },
+    "localGatewayName": {
+      "value": "localVPN"
+    },
+    "localGatewayIpAddress": {
+      "value": "203.0.113.1"
+    },
+    "localGatewayAddressPrefix": {
+      "value": "10.199.0.0/16"
+    },
+    "gatewayPublicIPName": {
+      "value": "twaz304gwpip1"
+    },
+    "gatewayName": {
+      "value": "twvpngateway01"
+    },
+    "addressPrefix": {
+      "value": "10.3.0.0/16"
+    },
+    "subnet1Prefix": {
+      "value": "10.3.0.0/24"
+    },
+    "gatewaySubnetPrefix": {
+      "value": "10.3.200.0/29"
+    }
+  }
+}
