@@ -33,10 +33,6 @@
 
 - [About](#about)
   - [Built With](#built-with)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
 - [Roadmap](#roadmap)
 - [Support](#support)
 - [Project assistance](#project-assistance)
@@ -52,37 +48,22 @@
 
 ## About
 
-> **[?]**
-> Provide general information about your project here.
-> What problem does it (intend to) solve?
-> What is the purpose of your project?
-> Why did you undertake it?
-> You don't have to answer all the questions - just the ones relevant to your project.
-
-
+This is a live, instructor-led course that covers the [AZ-500: Microsoft Azure Security Technologies](https://docs.microsoft.com/en-us/learn/certifications/exams/az-500) certification exam. I deliver the training in two three-hour sessions.
 
 ### Built With
 
-> **[?]**
-> Please provide the technologies that are used in the project.
-
-## Getting Started
-
-### Prerequisites
-
-> **[?]**
-> What are the project requirements/dependencies?
-
-### Installation
-
-> **[?]**
-> Proceed to describe how to install and get started with the project.
-
-## Usage
-
-> **[?]**
-> How does one go about using it?
-> Provide various use cases and code examples here.
+- Microsoft Azure
+- Visual Studio Code
+- PowerShell, ARM Tools, Azure Account, and Bicep VS Code extensions
+- Azure PowerShell
+- Azure CLI
+- Azure Bicep
+- PowerPoint
+- Visio
+- Lucidchart
+- Techsmith Snagit
+- Postman
+- Git
 
 ## Roadmap
 
@@ -124,7 +105,7 @@ Thank you for being involved!
 
 The original setup of this repository is by [Tim Warner](https://github.com/timothywarner).
 
-For a full list of all authors and contributors, check [the contributor's page](https://github.com/timothywarner/az500/contributors).
+For a full list of all authors and contributors, check [the contributors page](https://github.com/timothywarner/az500/contributors).
 
 ## Security
 
