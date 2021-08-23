@@ -1,7 +1,7 @@
 <h1 align="center">
   <a href="https://github.com/timothywarner/az500">
     <!-- Please provide path to your logo here -->
-    <img src="docs/images/az500.svg" alt="AZ-500-Logo" width="400" />
+    <img src="docs/images/az500.png" alt="AZ-500-Logo" width="400" />
   </a>
 </h1>
 
