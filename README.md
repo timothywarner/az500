@@ -75,13 +75,15 @@ See the [open issues](https://github.com/timothywarner/az500/issues) for a list 
 
 ## Support
 
-> **[?]**
-> Provide additional ways to contact the project maintainer/maintainers.
-
 Reach out to the maintainer at one of the following places:
 
 - [GitHub issues](https://github.com/timothywarner/az500/issues/new?assignees=&labels=question&template=04_SUPPORT_QUESTION.md&title=support%3A+)
-- The email which is located [in GitHub profile](https://github.com/timothywarner)
+- The email which is located [in Tim's GitHub profile](https://github.com/timothywarner)
+- YouTube channel
+- Pluralsight courses
+- Twitter
+- LinkedIn
+- Website
 
 ## Project assistance
 
@@ -122,6 +124,4 @@ See [LICENSE](LICENSE) for more information.
 
 ## Acknowledgements
 
-> **[?]**
-> If your work was funded by any organization or institution, acknowledge their support here.
-> In addition, if your work relies on other software libraries, or was inspired by looking at other work, it is appropriate to acknowledge this intellectual debt too.
+Thanks so much to O'Reilly Media and Pearson for allowing me to present this important material. Thanks to all my students for keeping me in business. :)
