@@ -1,0 +1,177 @@
+{
+  "properties": {
+    "targetScope": "subscription",
+    "parameters": {
+      "aks.json_aksClusterName": {
+        "type": "string",
+        "metadata": {
+          "displayName": "aksClusterName (aks.json)",
+          "description": "The name of the Managed Cluster resource."
+        },
+        "defaultValue": "aks101cluster-vmss",
+        "allowedValues": []
+      },
+      "aks.json_location": {
+        "type": "string",
+        "metadata": {
+          "displayName": "location (aks.json)",
+          "description": "The location of AKS resource."
+        },
+        "allowedValues": []
+      },
+      "aks.json_dnsPrefix": {
+        "type": "string",
+        "metadata": {
+          "displayName": "dnsPrefix (aks.json)",
+          "description": "Optional DNS prefix to use with hosted Kubernetes API server FQDN."
+        },
+        "allowedValues": []
+      },
+      "aks.json_osDiskSizeGB": {
+        "type": "int",
+        "metadata": {
+          "displayName": "osDiskSizeGB (aks.json)",
+          "description": "Disk size (in GiB) to provision for each of the agent pool nodes. This value ranges from 0 to 1023. Specifying 0 will apply the default disk size for that agentVMSize."
+        },
+        "defaultValue": 0,
+        "allowedValues": []
+      },
+      "aks.json_agentCount": {
+        "type": "int",
+        "metadata": {
+          "displayName": "agentCount (aks.json)",
+          "description": "The number of nodes for the cluster. 1 Node is enough for Dev/Test and minimum 3 nodes, is recommended for Production"
+        },
+        "defaultValue": 3,
+        "allowedValues": []
+      },
+      "aks.json_agentVMSize": {
+        "type": "string",
+        "metadata": {
+          "displayName": "agentVMSize (aks.json)",
+          "description": "The size of the Virtual Machine."
+        },
+        "defaultValue": "Standard_D2s_v3",
+        "allowedValues": []
+      },
+      "aks.json_osType": {
+        "type": "string",
+        "metadata": {
+          "displayName": "osType (aks.json)",
+          "description": "The type of operating system."
+        },
+        "defaultValue": "Linux",
+        "allowedValues": [
+          "Linux",
+          "Windows"
+        ]
+      },
+      "acr.json_acrName": {
+        "type": "string",
+        "metadata": {
+          "displayName": "acrName (acr.json)",
+          "description": "Name of the azure container registry (must be globally unique)"
+        },
+        "allowedValues": []
+      },
+      "acr.json_acrAdminUserEnabled": {
+        "type": "bool",
+        "metadata": {
+          "displayName": "acrAdminUserEnabled (acr.json)",
+          "description": "Enable an admin user that has push/pull permission to the registry."
+        },
+        "defaultValue": false,
+        "allowedValues": []
+      },
+      "acr.json_location": {
+        "type": "string",
+        "metadata": {
+          "displayName": "location (acr.json)",
+          "description": "Location for all resources."
+        },
+        "allowedValues": []
+      },
+      "acr.json_acrSku": {
+        "type": "string",
+        "metadata": {
+          "displayName": "acrSku (acr.json)",
+          "description": "Tier of your Azure Container Registry."
+        },
+        "defaultValue": "Basic",
+        "allowedValues": [
+          "Basic",
+          "Standard",
+          "Premium"
+        ]
+      },
+      "kubernetesclusterpodsecuritybaselinestandardsforLinux-basedworkloads_effect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Effect (Policy: Kubernetes cluster pod security baseline standards for Linux-based workloads)"
+        },
+        "defaultValue": "audit",
+        "allowedValues": [
+          "audit",
+          "deny",
+          "disabled"
+        ]
+      },
+      "kubernetesclusterpodsecuritybaselinestandardsforLinux-basedworkloads_excludedNamespaces": {
+        "type": "array",
+        "metadata": {
+          "displayName": "Namespace exclusions (Policy: Kubernetes cluster pod security baseline standards for Linux-based workloads)"
+        },
+        "defaultValue": [
+          "kube-system",
+          "gatekeeper-system",
+          "azure-arc"
+        ],
+        "allowedValues": []
+      },
+      "kubernetesclusterpodsecuritybaselinestandardsforLinux-basedworkloads_namespaces": {
+        "type": "array",
+        "metadata": {
+          "displayName": "Namespace inclusions (Policy: Kubernetes cluster pod security baseline standards for Linux-based workloads)"
+        },
+        "defaultValue": [],
+        "allowedValues": []
+      },
+      "[Usergrouporapplicationname]:Contributor_RoleAssignmentName": {
+        "type": "array",
+        "metadata": {
+          "displayName": "[User group or application name] ([User group or application name] : Contributor)",
+          "strongType": "PrincipalId"
+        }
+      },
+      "[Usergrouporapplicationname]:AcrPull_RoleAssignmentName": {
+        "type": "array",
+        "metadata": {
+          "displayName": "[User group or application name] ([User group or application name] : AcrPull)",
+          "strongType": "PrincipalId"
+        }
+      },
+      "[Usergrouporapplicationname]:AcrPush_RoleAssignmentName": {
+        "type": "array",
+        "metadata": {
+          "displayName": "[User group or application name] ([User group or application name] : AcrPush)",
+          "strongType": "PrincipalId"
+        }
+      },
+      "[Usergrouporapplicationname]:AcrDelete_RoleAssignmentName": {
+        "type": "array",
+        "metadata": {
+          "displayName": "[User group or application name] ([User group or application name] : AcrDelete)",
+          "strongType": "PrincipalId"
+        }
+      }
+    },
+    "resourceGroups": {
+      "ResourceGroup": {
+        "dependsOn": [],
+        "tags": {
+          "class": "az500"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "kind": "policyAssignment",
+  "properties": {
+    "displayName": "Kubernetes cluster pod security baseline standards for Linux-based workloads",
+    "dependsOn": [],
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/a8640138-9b0a-4a28-b8cb-1666c838647d",
+    "parameters": {
+      "effect": {
+        "value": "[parameters('kubernetesclusterpodsecuritybaselinestandardsforLinux-basedworkloads_effect')]"
+      },
+      "excludedNamespaces": {
+        "value": "[parameters('kubernetesclusterpodsecuritybaselinestandardsforLinux-basedworkloads_excludedNamespaces')]"
+      },
+      "namespaces": {
+        "value": "[parameters('kubernetesclusterpodsecuritybaselinestandardsforLinux-basedworkloads_namespaces')]"
+      }
+    },
+    "resourceGroup": "ResourceGroup"
+  }
+}
