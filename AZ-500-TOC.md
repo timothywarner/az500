@@ -2,20 +2,22 @@
 
 ## Manage Identity and Access
 
-* Users, groups, AUs
-* External identities
-* Passwords & PIM
-* App registrations & consent
-* RBAC authorization
-  * Custom roles
-* Azure AD PIM
+* Authentication
+  * Users, groups, AUs
+  * External identities
+  * Passwords & PIM
+  * App registrations & consent
+
+* Authorization
+  * RBAC authorization
+    * Custom roles
+  * Azure AD PIM
 
 ## Secure Data and Applications
 
 * Storage account authentication & authorization
 * Azure SQL Database
 * Key Vault
-
 
 ## Implement Platform Protection
 
