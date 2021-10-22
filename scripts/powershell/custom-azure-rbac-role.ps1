@@ -1,14 +1,14 @@
 # Ref: https://docs.microsoft.com/en-us/azure/role-based-access-control/tutorial-custom-role-powershell
 
-Get-AzProviderOperation 'Microsoft.Support/*' | Format-Table -Property Operation, Description -AutoSize
+Get-AzProviderOperation 'Microsoft.Storage/*' | Format-Table -Property Operation, Description -AutoSize
 
-Get-AzRoleDefinition -Name 'Reader' | ConvertTo-Json | Out-File 'C:\ReaderSupportRole.json'
+Get-AzRoleDefinition -Name 'Virtual Machine Contributor' | ConvertTo-Json | Out-File 'D:\vmcontrib.json'
 
-code C:\ReaderSupportRole.json
+code D:\vmcontrib.json
 
 Get-AzSubscription | Select-Object -Property id
 
-New-AzRoleDefinition -InputFile 'C:\ReaderSupportRole.json'
+New-AzRoleDefinition -InputFile 'D:\vmcontrib.json'
 
 Get-AzRoleDefinition | Where-Object -FilterScript { $_.IsCustom -eq $true } | Format-Table -Property Name, IsCustom
 

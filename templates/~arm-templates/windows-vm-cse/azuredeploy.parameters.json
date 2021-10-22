@@ -6,12 +6,7 @@
             "value": "tim"
         },
         "adminPassword": {
-            "reference": {
-                "keyVault": {
-                    "id": "/subscriptions/2fbf906e-1101-4bc0-b64f-adc44e462fff/resourceGroups/TIM/providers/Microsoft.KeyVault/vaults/tim-keyvault-001"
-                },
-                "secretName": "timvmpw"
-            }
+            "value": "MyP@$$w0rd!!"
         },
         "dnsLabelPrefix": {
             "value": "twvm1dns"
