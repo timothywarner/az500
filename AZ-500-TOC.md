@@ -1,6 +1,8 @@
 # AZ-500 Course TOC
 
-## Manage Identity and Access
+## DAY 1
+
+### Manage Identity and Access
 
 * Authentication
   * Users, groups, AUs
@@ -13,21 +15,34 @@
     * Custom roles
   * Azure AD PIM
 
-## Secure Data and Applications
+### Secure Data and Applications
 
 * Storage account authentication & authorization
 * Azure SQL Database
 * Key Vault
 
-## Implement Platform Protection
 
+
+
+
+
+## DAY 2
+
+### Data, Concluded
+
+* CMK in storage acct, azure sql, cosmos, and VM storage
+* ADE
+
+### Implement Platform Protection
+
+* ARM VM w/ key vault
 * Azure Firewall
 * Application Gateway
 * Front Door
 * WAF
 * Service Endpoint / Private Endpoint
 
-## Manage Security Operations
+### Manage Security Operations
 
 * Azure Policy
 * Azure Defender
