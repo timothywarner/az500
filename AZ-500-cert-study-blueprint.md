@@ -62,7 +62,7 @@
 * [Microsoft Certification Exam Offers](https://www.microsoft.com/en-us/learning/offers.aspx)
 * [Microsoft Online Exams](https://www.microsoft.com/en-us/learning/online-exams.aspx)
 * [Pearson OnVUE Information](https://home.pearsonvue.com/Clients/Microsoft/Online-proctored.aspx)
-*[ Tim's online testing tutorial (YouTube)](https://www.youtube.com/watch?v=myf6r5nulj0)
+* [Tim's online testing tutorial (YouTube)](https://www.youtube.com/watch?v=myf6r5nulj0)
 * [Exam scoring and score reports](https://docs.microsoft.com/en-us/learn/certifications/exam-scoring-reports)
 * [Pearson VUE Grievance](https://home.pearsonvue.com/microsoft/contact)
 * [Microsoft Policies and FAQs](https://docs.microsoft.com/en-us/learn/certifications/certification-exam-policies)
