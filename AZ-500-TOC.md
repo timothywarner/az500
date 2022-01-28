@@ -7,19 +7,31 @@
 * Authentication
   * Users, groups, AUs
   * External identities
-  * Passwords & PIM
   * App registrations & consent
+  * SSPR
 
 * Authorization
   * RBAC authorization
     * Custom roles
   * Azure AD PIM
 
-### Secure Data and Applications
+* Accounting / Monitoring
+  * AAD logs
+  * Activity log
+  * Sentinel
 
-* Storage account authentication & authorization
-* Azure SQL Database
-* Key Vault
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -28,10 +40,18 @@
 
 ## DAY 2
 
-### Data, Concluded
+### Secure Data and Applications
 
-* CMK in storage acct, azure sql, cosmos, and VM storage
-* ADE
+* Storage account
+  * Access control
+* Azure SQL Database
+  * Auditing
+  * Encryption
+  * Masking
+* VMs
+  * ADE / SSE
+
+* CONTAINERS / Azure CLI script
 
 ### Implement Platform Protection
 

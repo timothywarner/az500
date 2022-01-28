@@ -1,0 +1,37 @@
+# Create a container registry
+az acr create --resource-group az500-rg --name twaz500acr --sku Standard
+
+# Sign into the registry
+az acr login --name twaz500acr
+
+
+# Pull and push an image
+docker pull mcr.microsoft.com/hello-world
+
+docker tag mcr.microsoft.com/hello-world twaz500acr/hello-world:unsigned
+
+docker push twaz500acr/hello-world:unsigned
+
+# List images
+az acr repository list --name twaz500acr --output table
+
+# Run image from registry
+docker run twaz500acr/hello-world:unsigned
+
+# Trusted image setup (enable content trust in ACR)
+
+# Enable content trust
+az acr config content-trust update -r twaz500acr.azurecr.io --status Enabled
+
+export DOCKER_CONTENT_TRUST=1
+
+# Grant signing permissions
+az role assignment create --scope <registry ID> --role AcrImageSigner --assignee <user name>
+
+# MS Defender for Cloud for vulnerability scanning
+
+docker trust inspect --pretty example/trust-demo
+
+docker trust sign example/trust-demo:v2
+
+docker push registrydavid.azurecr.io/hello-world:signed
