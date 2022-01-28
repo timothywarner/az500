@@ -25,6 +25,8 @@ docker run twaz500acr/hello-world:unsigned
 # Enable content trust
 az acr config content-trust update -r twaz500acr.azurecr.io --status Enabled
 
+docker build --disable-content-trust=false -t twaz500acr.azurecr.io/myimage:v1 .
+
 export DOCKER_CONTENT_TRUST=1
 
 # Grant signing permissions
