@@ -23,7 +23,7 @@
 * [Azure Pass offer](https://www.microsoftazurepass.com/)
 * [Azure Log Analytics Query Playground](https://portal.loganalytics.io/demo)
 
-## Building Your toolset
+## Building Your Toolset
 
 * [Visual Studio Code](https://code.visualstudio.com/)
 * Extensions
