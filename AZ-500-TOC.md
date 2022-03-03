@@ -2,7 +2,7 @@
 
 ## DAY 1
 
-### Manage Identity and Access
+### Manage Identity and Access / Manage Security Operations
 
 * Authentication
   * Users, groups, AUs
@@ -18,6 +18,7 @@
 * Accounting / Monitoring
   * AAD logs
   * Activity log
+  * Defender for Cloud
   * Sentinel
 
 
@@ -40,7 +41,7 @@
 
 ## DAY 2
 
-### Secure Data and Applications
+### Implement Platform Protection / Secure Data and Applications
 
 * Storage account
   * Access control
