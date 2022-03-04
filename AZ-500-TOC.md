@@ -28,6 +28,10 @@
 
 ## DAY 2
 
+### Sweeping up the shavings
+
+* Azure Policy (Defender for Cloud
+
 ### Implement Platform Protection / Secure Data and Applications
 
 * Key Vault
