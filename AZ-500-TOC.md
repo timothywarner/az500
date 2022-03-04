@@ -26,41 +26,31 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## DAY 2
 
 ### Implement Platform Protection / Secure Data and Applications
 
+* Key Vault
+  * CLI
+* VMs
+  * ADE / SSE
 * Storage account
   * Access control
 * Azure SQL Database
   * Auditing
   * Encryption
   * Masking
-* VMs
-  * ADE / SSE
 
-* CONTAINERS / Azure CLI script
+* App Service
+  * TLS
+* ACR
+  * Trusted images
 
-### Implement Platform Protection
-
-* ARM VM w/ key vault
+* DDoS Protection
 * Azure Firewall
 * Application Gateway
 * Front Door
-* WAF
+* Web Application Firewall
 * Service Endpoint / Private Endpoint
 
 ### Manage Security Operations

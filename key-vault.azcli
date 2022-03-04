@@ -1,0 +1,31 @@
+# Manage Key Vault with CLI
+
+# Ref: timw.info/1fg
+
+# Preliminary info
+az login
+
+az configure
+
+az account set --name "Microsoft Azure Sponsorship"
+
+az account list -o table
+
+# Add a secret
+az keyvault secret set --vault-name "twaz500vault1" --name "VMPassword" --value "hVFkk965BuUv "
+
+# View secrets
+az keyvault secret list --vault-name "twaz500vault1"
+
+# Retrieve a secret
+az keyvault secret show --name "VMPassword" --vault-name "<your-unique-keyvault-name>" --query "value"
+
+# Register service principal
+az ad sp create-for-rbac -n "KeyVaultSP" --password "hVFkk965BuUv" --role Contributor
+# If you don't specify a password, one will be created for you
+
+# Allow SP to read secrets
+az keyvault set-policy --name "twaz500vault1" --spn 8f8c4bbd-485b-45fd-98f7-ec6300b7b4ed --secret-permissions get
+
+
+
