@@ -46,7 +46,7 @@
 
 ---
 
-## About
+## About this Class
 
 This is a live, instructor-led course that covers the [AZ-500: Microsoft Azure Security Technologies](https://docs.microsoft.com/en-us/learn/certifications/exams/az-500) certification exam. I deliver the training in two three-hour sessions.
 
