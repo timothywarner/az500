@@ -46,7 +46,7 @@
 ## Azure Bicep
 
 * [Bicep Playground](https://bicepdemo.z22.web.core.windows.net/)
-* [im's Frankenstein project](https://github.com/timothywarner/frankenstein)
+* [Tim's Frankenstein project](https://github.com/timothywarner/frankenstein)
 * [Azure Bicep tutorial](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/learn-bicep)
 * [Tim's Frankenstein project](https://github.com/timothywarner/frankenstein)
 

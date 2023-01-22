@@ -5,61 +5,55 @@
 ### Manage Identity and Access / Manage Security Operations
 
 * Authentication
-  * Users, groups, AUs
+  * Entra portal
+  * Users, groups, SPs, managed identities, AUs
   * External identities
   * App registrations & consent
-  * SSPR
+  * MFA
+  * Password Protection
+  * Conditional Access & IdP
+  * Verified ID
 
 * Authorization
   * RBAC authorization
     * Custom roles
   * Azure AD PIM
+  * Access reviews
+  * Identity governance
+  * App registration consent
 
-* Accounting / Monitoring
-  * AAD logs
-  * Activity log
+* Security operations
+  * Landing zones / Bicep / Blueprints
+  * Azure Policy
+  * Key Vault
   * Defender for Cloud
   * Sentinel
-
-
-
-
-
 
 ## DAY 2
 
 ### Sweeping up the shavings
 
-* Azure Policy (Defender for Cloud
+*
 
-### Implement Platform Protection / Secure Data and Applications
+### Secure networking
 
-* Key Vault
-  * CLI
-* VMs
-  * ADE / SSE
-* Storage account
-  * Access control
-* Azure SQL Database
-  * Auditing
-  * Encryption
-  * Masking
+* VNets
+* NSGs and ASGs
+* Virtual WAN
+* VPNs
+* App Gateway & Front Door
+* WAF
+* Network Watcher
+* Private endpoints
 
-* App Service
-  * TLS
-* ACR
-  * Trusted images
+### Secure compute, storage, and databases
 
-* DDoS Protection
-* Azure Firewall
-* Application Gateway
-* Front Door
-* Web Application Firewall
-* Service Endpoint / Private Endpoint
+* Bastion and JIT Access
+* ADE and SSE
+* Container services
+* Storage accounts
+* Azure SQL Database and Managed Instance
+  * DDM & TDE
+  * Always Encrypted
+  * Purview
 
-### Manage Security Operations
-
-* Azure Policy
-* Azure Defender
-* Azure Sentinel
-* Azure Monitor
