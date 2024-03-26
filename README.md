@@ -1,127 +1,79 @@
-<h1 align="center">
-  <a href="https://github.com/timothywarner/az500">
-    <!-- Please provide path to your logo here -->
-    <img src="docs/images/az500.png" alt="AZ-500-Logo" width="400" />
-  </a>
-</h1>
+# Exam AZ-500 Certification Study Resources
 
-<div align="center">
-  Exam AZ-500: Microsoft Azure Security Technologies Crash Course
-  <br />
-  <a href="#about"><strong>Explore the docs »</strong></a>
-  <br />
-  <br />
-  <a href="https://github.com/timothywarner/az500/issues/new?assignees=&labels=bug&template=01_BUG_REPORT.md&title=bug%3A+">Report a Bug</a>
-  ·
-  <a href="https://github.com/timothywarner/az500/issues/new?assignees=&labels=enhancement&template=02_FEATURE_REQUEST.md&title=feat%3A+">Request a Feature</a>
-  .
-  <a href="https://github.com/timothywarner/az500/issues/new?assignees=&labels=question&template=04_SUPPORT_QUESTION.md&title=support%3A+">Ask a Question</a>
-</div>
+Last updated March 26, 2024
 
-<div align="center">
-<br />
+## Contact information
 
-[![license](https://img.shields.io/github/license/timothywarner/az500.svg?style=flat-square)](LICENSE)
+- [LinkedIn](https://www.linkedin.com/in/timothywarner/)
+- [Email](mailto:timothywarner316@gmail.com)
+- [Website](https://techtrainertim.com)
+- [Bluesky](https://bsky.app/profile/techtrainertim.bsky.social)
+- [Mastodon](https://mastodon.social/@techtrainertim)
+- [Prompt Sharing Framework (PSF) at GitHub](https://github.com/timothywarner-org/psf)
 
-[![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg?style=flat-square)](https://github.com/timothywarner/az500/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
-[![code with hearth by timothywarner](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-timothywarner-ff1414.svg?style=flat-square)](https://github.com/timothywarner)
+## Theoretical Knowledge
 
-</div>
+* [Azure docs](https://docs.microsoft.com/en-us/azure/)
+* [Azure Security Documentation](https://docs.microsoft.com/en-us/azure/security/)
+* [Tim's ARM template tutorial (YouTube)](https://timwinfo-my.sharepoint.com/:x:/g/personal/tim_timw_info/EQRooL1BhnRMjaIx6WEovRYBDXbzHOI1CrtpNls3zesDHw?rtime=Y5YgZwoI2Ug)
+* [Sam Cogan's ARM template tutorial](https://www.youtube.com/watch?v=9EpBiud48Ao)
+* [Adam Marczak's ARM template tutorial](https://www.youtube.com/watch?v=Ge_Sp-1lWZ4)
+* [Azure Security Center docs](https://docs.microsoft.com/en-us/azure/security-center/)
+* [Azure Sentinel docs](https://docs.microsoft.com/en-us/azure/sentinel/)
 
-<details open="open">
-<summary>Table of Contents</summary>
+## Hands-on Skill Development
 
-- [About](#about)
-  - [Built With](#built-with)
-- [Roadmap](#roadmap)
-- [Support](#support)
-- [Project assistance](#project-assistance)
-- [Contributing](#contributing)
-- [Authors & contributors](#authors--contributors)
-- [Security](#security)
-- [License](#license)
-- [Acknowledgements](#acknowledgements)
+* [Microsoft Learn Security Labs](https://docs.microsoft.com/en-us/learn/browse/?roles=security-engineer)
+* [A Cloud Guru AZ-500 learning path](https://acloudguru.com/course/az-500-microsoft-azure-security-technologies-la)
+* [Cloud Academy AZ-500 learning path](https://cloudacademy.com/learning-paths/az-500-exam-preparation-microsoft-azure-security-technologies-650/)
+* [Pluralsight AZ-500 learning path](https://www.pluralsight.com/paths/microsoft-azure-security-technologies-az-500)
+* [Azure Citadel Security Labs](https://azurecitadel.com/security/)
+* * [Pluralsight Cloud Labs](https://www.pluralsight.com/product/cloud-labs)
+* [Azure user group search](https://www.meetup.com/)
+* [Azure Free Trial](https://azure.microsoft.com/en-us/free/)
+* [Azure Pass offer](https://www.microsoftazurepass.com/)
+* [Azure Log Analytics Query Playground](https://portal.loganalytics.io/demo)
 
-</details>
+## Building Your Toolset
 
----
+* [Visual Studio Code](https://code.visualstudio.com/)
+* Extensions
+  * [PowerShell](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell)
+  * [Azure Account](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account)
+  * [ARM Tools](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools)
+  * [Azure CLI Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azurecli)
+  * [Bicep](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep)
+* [PowerShell 7](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell)
+* [Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps)
+* [Azure Bicep](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/install)
+* [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
+* [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/)
+* A[zure Data Studio](https://docs.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio)
+* [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10)
+* [Tim's Recommended Visual Studio Code Tutorial](https://vscode.pro/)
+* [Lucidchart](https://www.lucidchart.com/pages/)
+* [Sandro's Azure Visio Stencils and Icons](https://blog.sandro-pereira.com/2021/06/21/microsoft-integration-and-azure-stencils-pack-for-visio-new-version-available-v7-2-0/)
 
-## About this Class
+## Azure Bicep
 
-This is a live, instructor-led course that covers the [AZ-500: Microsoft Azure Security Technologies](https://docs.microsoft.com/en-us/learn/certifications/exams/az-500) certification exam. I deliver the training in two three-hour sessions.
+* [Bicep Playground](https://bicepdemo.z22.web.core.windows.net/)
+* [Tim's Frankenstein project](https://github.com/timothywarner/frankenstein)
+* [Azure Bicep tutorial](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/learn-bicep)
+* [Tim's Frankenstein project](https://github.com/timothywarner/frankenstein)
 
-### Built With
+## Practice exams
 
-- Microsoft Azure
-- Visual Studio Code
-- PowerShell, ARM Tools, Azure Account, and Bicep VS Code extensions
-- Azure PowerShell
-- Azure CLI
-- Azure Bicep
-- PowerPoint
-- Visio
-- Lucidchart
-- Techsmith Snagit
-- Postman
-- Git
+* [Whizlabs AZ-500 practice exams](https://www.whizlabs.com/microsoft-azure-certification-az-500/)
+* [MeasureUp AZ-500 practice exams](https://www.measureup.com/az-500-microsoft-azure-security-technologies.html)
+* [Tim's practice exam comparison](https://www.youtube.com/watch?v=_aH4DbpcJWA&t=2s)
 
-## Roadmap
+## Exam-Specific Information
 
-See the [open issues](https://github.com/timothywarner/az500/issues) for a list of proposed features (and known issues).
-
-- [Top Feature Requests](https://github.com/timothywarner/az500/issues?q=label%3Aenhancement+is%3Aopen+sort%3Areactions-%2B1-desc) (Add your votes using the 👍 reaction)
-- [Top Bugs](https://github.com/timothywarner/az500/issues?q=is%3Aissue+is%3Aopen+label%3Abug+sort%3Areactions-%2B1-desc) (Add your votes using the 👍 reaction)
-- [Newest Bugs](https://github.com/timothywarner/az500/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
-
-## Support
-
-Reach out to the maintainer at one of the following places:
-
-- [GitHub issues](https://github.com/timothywarner/az500/issues/new?assignees=&labels=question&template=04_SUPPORT_QUESTION.md&title=support%3A+)
-- The email which is located [in Tim's GitHub profile](https://github.com/timothywarner)
-- YouTube channel
-- Pluralsight courses
-- Twitter
-- LinkedIn
-- Website
-
-## Project assistance
-
-If you want to say **thank you** or/and support active development of Exam AZ-500: Microsoft Azure Security Technologies Crash Course:
-
-- Add a [GitHub Star](https://github.com/timothywarner/az500) to the project.
-- Tweet about the Exam AZ-500: Microsoft Azure Security Technologies Crash Course on your Twitter.
-- Write interesting articles about the project on [Dev.to](https://dev.to/), [Medium](https://medium.com/) or personal blog.
-
-Together, we can make Exam AZ-500: Microsoft Azure Security Technologies Crash Course **better**!
-
-## Contributing
-
-First off, thanks for taking the time to contribute! Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make will benefit everybody else and are **greatly appreciated**.
-
-We have set up a separate document containing our [contribution guidelines](docs/CONTRIBUTING.md).
-
-Thank you for being involved!
-
-## Authors & contributors
-
-The original setup of this repository is by [Tim Warner](https://github.com/timothywarner).
-
-For a full list of all authors and contributors, check [the contributors page](https://github.com/timothywarner/az500/contributors).
-
-## Security
-
-Exam AZ-500: Microsoft Azure Security Technologies Crash Course follows good practices of security, but 100% security can't be granted in software.
-Exam AZ-500: Microsoft Azure Security Technologies Crash Course is provided **"as is"** without any **warranty**. Use at your own risk.
-
-_For more info, please refer to the [security](docs/SECURITY.md)._
-
-## License
-
-This project is licensed under the **MIT license**.
-
-See [LICENSE](LICENSE) for more information.
-
-## Acknowledgements
-
-Thanks so much to O'Reilly Media and Pearson for allowing me to present this important material. Thanks to all my students for keeping me in business. :)
+* [AZ-500 exam page](https://docs.microsoft.com/en-us/learn/certifications/exams/az-500)
+* [Microsoft Certification Exam Offers](https://www.microsoft.com/en-us/learning/offers.aspx)
+* [Microsoft Online Exams](https://www.microsoft.com/en-us/learning/online-exams.aspx)
+* [Pearson OnVUE Information](https://home.pearsonvue.com/Clients/Microsoft/Online-proctored.aspx)
+* [Tim's online testing tutorial (YouTube)](https://www.youtube.com/watch?v=myf6r5nulj0)
+* [Exam scoring and score reports](https://docs.microsoft.com/en-us/learn/certifications/exam-scoring-reports)
+* [Pearson VUE Grievance](https://home.pearsonvue.com/microsoft/contact)
+* [Microsoft Policies and FAQs](https://docs.microsoft.com/en-us/learn/certifications/certification-exam-policies)
