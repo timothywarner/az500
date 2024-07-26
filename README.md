@@ -11,6 +11,32 @@ Last updated July 25, 2024
 - [Mastodon](https://mastodon.social/@techtrainertim)
 - [Prompt Sharing Framework (PSF) at GitHub](https://github.com/timothywarner-org/psf)
 
+## First-Party Microsoft Resources
+
+- [Microsoft Entra ID documentation](https://learn.microsoft.com/en-us/entra/identity/)
+- [Microsoft Sentinel documentation](https://learn.microsoft.com/en-us/azure/sentinel/)
+- [Microsoft Defender XDR documentation](https://learn.microsoft.com/en-us/defender-xdr/)
+- [Microsoft Defender for Identity documentation](https://learn.microsoft.com/en-us/defender-for-identity/)
+- [Microsoft Defender for Endpoint documentation](https://learn.microsoft.com/en-us/defender-endpoint/)
+- [Microsoft Defender for Cloud documentation](https://learn.microsoft.com/en-us/azure/defender-for-cloud/)
+- [Microsoft Defender for Office 365 documentation](https://learn.microsoft.com/en-us/defender-office-365/)
+- [Microsoft Entitlement Management documentation](https://learn.microsoft.com/en-us/entra/id-governance/entitlement-management-overview)
+- [Microsoft Entra PIM documentation](https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/)
+- [Microsoft Entra Password Protection](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-password-ban-bad-on-premises)
+- [Microsoft MFA documentation](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-mfa-howitworks)
+- [Microsoft Conditional Access documentation](https://learn.microsoft.com/en-us/entra/identity/conditional-access/)
+- [Microsoft Identity Protection documentation](https://learn.microsoft.com/en-us/entra/id-protection/)
+- [Zero Trust Guidance Center](https://learn.microsoft.com/en-us/security/zero-trust/)
+
+## Microsoft Proven Practices
+
+- [Microsoft Cybersecurity Reference Architectures](https://learn.microsoft.com/en-us/security/adoption/mcra)
+- [Microsoft Security Adoption Framework (SAF)](https://learn.microsoft.com/en-us/security/adoption/adoption)
+- [Microsoft Security documentation](https://learn.microsoft.com/en-us/security/)
+- [Microsoft Cloud Security Benchmark documentation](https://learn.microsoft.com/en-us/security/benchmark/azure/)
+- [Azure Top 10 Security Practices](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/get-started/security#step-1-establish-essential-security-practices)
+- [Azure Virtual Machines baseline architecture in an Azure landing zone](https://learn.microsoft.com/en-us/azure/architecture/virtual-machines/baseline-landing-zone)
+
 ## Theoretical Knowledge
 
 * [Azure docs](https://docs.microsoft.com/en-us/azure/)
