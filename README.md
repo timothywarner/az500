@@ -24,11 +24,10 @@ Last updated July 25, 2024
 ## Hands-on Skill Development
 
 * [Microsoft Learn Security Labs](https://docs.microsoft.com/en-us/learn/browse/?roles=security-engineer)
-* [A Cloud Guru AZ-500 learning path](https://acloudguru.com/course/az-500-microsoft-azure-security-technologies-la)
 * [Cloud Academy AZ-500 learning path](https://cloudacademy.com/learning-paths/az-500-exam-preparation-microsoft-azure-security-technologies-650/)
 * [Pluralsight AZ-500 learning path](https://www.pluralsight.com/paths/microsoft-azure-security-technologies-az-500)
 * [Azure Citadel Security Labs](https://azurecitadel.com/security/)
-* * [Pluralsight Cloud Labs](https://www.pluralsight.com/product/cloud-labs)
+* [Pluralsight Cloud Labs](https://www.pluralsight.com/product/cloud-labs)
 * [Azure user group search](https://www.meetup.com/)
 * [Azure Free Trial](https://azure.microsoft.com/en-us/free/)
 * [Azure Pass offer](https://www.microsoftazurepass.com/)
@@ -63,9 +62,8 @@ Last updated July 25, 2024
 
 ## Practice exams
 
-* [Whizlabs AZ-500 practice exams](https://www.whizlabs.com/microsoft-azure-certification-az-500/)
+* [Microsoft Practice Assessments](https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications)
 * [MeasureUp AZ-500 practice exams](https://www.measureup.com/az-500-microsoft-azure-security-technologies.html)
-* [Tim's practice exam comparison](https://www.youtube.com/watch?v=_aH4DbpcJWA&t=2s)
 
 ## Exam-Specific Information
 
