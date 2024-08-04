@@ -9,7 +9,6 @@ Last updated August 4, 2024
 - [Website](https://techtrainertim.com)
 - [Bluesky](https://bsky.app/profile/techtrainertim.bsky.social)
 - [Mastodon](https://mastodon.social/@techtrainertim)
-- [Prompt Sharing Framework (PSF) at GitHub](https://github.com/timothywarner-org/psf)
 
 ## First-Party Microsoft Resources
 
