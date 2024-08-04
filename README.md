@@ -1,6 +1,6 @@
 # Exam AZ-500 Certification Study Resources
 
-Last updated July 25, 2024
+Last updated August 4, 2024
 
 ## Contact information
 
