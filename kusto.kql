@@ -1,0 +1,84 @@
+// Security Investigation Query - Correlated Security Events Analysis
+// Purpose: Detect potential lateral movement attempts by correlating failed login attempts
+// with subsequent successful logins and suspicious process executions
+
+// First, let's get failed login attempts
+let FailedLogins = 
+    SecurityEvent
+    | where TimeGenerated > ago(24h)
+    | where EventID == 4625  // Failed login attempt
+    | where AccountType == "User"
+    | project 
+        TimeGenerated,
+        SourceComputer = Computer,
+        TargetAccount = tolower(TargetUserName),
+        SourceIP = IpAddress,
+        FailureReason = Status;
+
+// Get successful logins that happened after failed attempts
+let SuccessfulLogins =
+    SecurityEvent
+    | where TimeGenerated > ago(24h)
+    | where EventID == 4624  // Successful login
+    | where LogonType in (3, 10)  // Network and RemoteInteractive logons
+    | project
+        LoginTime = TimeGenerated,
+        DestinationHost = Computer,
+        TargetAccount = tolower(TargetUserName),
+        LogonType,
+        SourceIP = IpAddress;
+
+// Get suspicious process executions
+let SuspiciousProcesses =
+    SecurityEvent
+    | where TimeGenerated > ago(24h)
+    | where EventID == 4688  // Process creation
+    | where CommandLine has_any("mimikatz", "psexec", "wmic", "powershell -enc")
+    | project
+        ProcessTime = TimeGenerated,
+        Host = Computer,
+        Account = tolower(SubjectUserName),
+        ProcessName = Process,
+        CommandLine;
+
+// Correlate all events
+FailedLogins
+| join kind=inner (
+    SuccessfulLogins
+    | where LoginTime > TimeGenerated  // Only get logins that happened after failed attempts
+) on TargetAccount
+| where LoginTime - TimeGenerated < timespan(1h)  // Within 1 hour
+| join kind=leftouter (
+    SuspiciousProcesses
+    | where ProcessTime > TimeGenerated  // Only get processes that ran after failed attempts
+) on $left.TargetAccount == $right.Account
+| where ProcessTime - LoginTime < timespan(2h) or isnull(ProcessTime)  // Within 2 hours of successful login
+| project
+    InitialFailureTime = TimeGenerated,
+    SuccessfulLoginTime = LoginTime,
+    SuspiciousProcessTime = ProcessTime,
+    TargetAccount,
+    SourceIP,
+    DestinationHost,
+    FailureReason,
+    LogonType,
+    SuspiciousProcess = ProcessName,
+    SuspiciousCommandLine = CommandLine
+| sort by InitialFailureTime asc
+| extend TimeBetweenFailureAndSuccess = datetime_diff('minute', SuccessfulLoginTime, InitialFailureTime)
+| extend AlertSeverity = case(
+    isnotnull(SuspiciousProcess), "High",
+    TimeBetweenFailureAndSuccess < 10, "Medium",
+    "Low"
+)
+| summarize
+    FailedLoginCount = count(),
+    UniqueSourceIPs = dcount(SourceIP),
+    AffectedHosts = make_set(DestinationHost),
+    SuspiciousProcesses = make_set(SuspiciousProcess)
+    by TargetAccount, AlertSeverity
+| extend RecommendedAction = case(
+    AlertSeverity == "High", "Immediate investigation required. Consider account suspension.",
+    AlertSeverity == "Medium", "Review login patterns and validate with user.",
+    "Monitor for additional suspicious activity."
+)

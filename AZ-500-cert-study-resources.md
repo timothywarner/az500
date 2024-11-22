@@ -1,70 +1,54 @@
 # Exam AZ-500 Certification Study Resources
 
-Last updated: November 22, 2024
+Last updated: March 2024
 
-## Theoretical Knowledge
+## Official Microsoft Learning Resources
 
-* [Azure docs](https://docs.microsoft.com/en-us/azure/)
-* [Azure Security Documentation](https://docs.microsoft.com/en-us/azure/security/)
-* [Tim's ARM template tutorial (YouTube)](https://timwinfo-my.sharepoint.com/:x:/g/personal/tim_timw_info/EQRooL1BhnRMjaIx6WEovRYBDXbzHOI1CrtpNls3zesDHw?rtime=Y5YgZwoI2Ug)
-* [Sam Cogan's ARM template tutorial](https://www.youtube.com/watch?v=9EpBiud48Ao)
-* [Adam Marczak's ARM template tutorial](https://www.youtube.com/watch?v=Ge_Sp-1lWZ4)
-* [Azure Security Center docs](https://docs.microsoft.com/en-us/azure/security-center/)
-* [Azure Sentinel docs](https://docs.microsoft.com/en-us/azure/sentinel/)
+* [AZ-500 Exam Page](https://learn.microsoft.com/en-us/certifications/exams/az-500)
+* [Microsoft Learn AZ-500 Learning Paths](https://learn.microsoft.com/en-us/credentials/certifications/azure-security-engineer/)
+* [Official Microsoft Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/azure-security-engineer/practice/assessment)
+* [Microsoft Security Technical Documentation](https://learn.microsoft.com/en-us/security/)
+* [Microsoft Security Blog](https://www.microsoft.com/security/blog/)
+* [Azure Security Center Documentation](https://learn.microsoft.com/en-us/azure/defender-for-cloud/)
+* [Microsoft Defender for Cloud Documentation](https://learn.microsoft.com/en-us/azure/defender-for-cloud/)
+* [Microsoft Sentinel Documentation](https://learn.microsoft.com/en-us/azure/sentinel/)
 
-## Hands-on Skill Development
+## Hands-on Labs & Practice
 
-* [Microsoft Learn Security Labs](https://docs.microsoft.com/en-us/learn/browse/?roles=security-engineer)
-* [A Cloud Guru AZ-500 learning path](https://acloudguru.com/course/az-500-microsoft-azure-security-technologies-la)
-* [Cloud Academy AZ-500 learning path](https://cloudacademy.com/learning-paths/az-500-exam-preparation-microsoft-azure-security-technologies-650/)
-* [Pluralsight AZ-500 learning path](https://www.pluralsight.com/paths/microsoft-azure-security-technologies-az-500)
-* [Azure Citadel Security Labs](https://azurecitadel.com/security/)
-* * [Pluralsight Cloud Labs](https://www.pluralsight.com/product/cloud-labs)
-* [Azure user group search](https://www.meetup.com/)
-* [Azure Free Trial](https://azure.microsoft.com/en-us/free/)
-* [Azure Pass offer](https://www.microsoftazurepass.com/)
-* [Azure Log Analytics Query Playground](https://portal.loganalytics.io/demo)
+* [Microsoft Learn Labs](https://learn.microsoft.com/en-us/training/paths/manage-security-operations/)
+* [Official AZ-500 Lab Exercises](https://microsoftlearning.github.io/AZ-500-AzureSecurityTechnologies/)
+* [Microsoft Azure Free Account](https://azure.microsoft.com/free/)
+* [Azure Citadel Security Labs](https://www.azurecitadel.com/security/)
+* [Azure Log Analytics Query Playground](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-tutorial)
 
-## Building Your Toolset
+## Practice Exams & Test Prep
 
-* [Visual Studio Code](https://code.visualstudio.com/)
-* Extensions
-  * [PowerShell](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell)
+* [MeasureUp AZ-500 Practice Tests](https://www.measureup.com/az-500-microsoft-azure-security-technologies.html)
+* [Whizlabs AZ-500 Practice Tests](https://www.whizlabs.com/microsoft-azure-certification-az-500/)
+
+## Essential Tools
+
+* [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/)
+* [Azure PowerShell](https://learn.microsoft.com/en-us/powershell/azure/)
+* [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/)
+* [Microsoft Entra ID Portal](https://entra.microsoft.com/)
+* Visual Studio Code Extensions:
   * [Azure Account](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account)
-  * [ARM Tools](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools)
+  * [Azure Security Center](https://marketplace.visualstudio.com/items?itemName=ms-azuresecurity.vscode-azuresecurity)
   * [Azure CLI Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azurecli)
-  * [Bicep](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep)
-* [PowerShell 7](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell)
-* [Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps)
-* [Azure Bicep](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/install)
-* [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
-* [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/)
-* A[zure Data Studio](https://docs.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio)
-* [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10)
-* [Tim's Recommended Visual Studio Code Tutorial](https://vscode.pro/)
-* [Lucidchart](https://www.lucidchart.com/pages/)
-* [Sandro's Azure Visio Stencils and Icons](https://blog.sandro-pereira.com/2021/06/21/microsoft-integration-and-azure-stencils-pack-for-visio-new-version-available-v7-2-0/)
+  * [PowerShell](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell)
 
-## Azure Bicep
+## Security Community Resources
 
-* [Bicep Playground](https://bicepdemo.z22.web.core.windows.net/)
-* [Tim's Frankenstein project](https://github.com/timothywarner/frankenstein)
-* [Azure Bicep tutorial](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/learn-bicep)
-* [Tim's Frankenstein project](https://github.com/timothywarner/frankenstein)
+* [Microsoft Security Community](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/ct-p/SecurityComplianceIdentity)
+* [Azure Security Center Community](https://techcommunity.microsoft.com/t5/azure-security-center/bd-p/AzureSecurityCenter)
+* [Microsoft Security Update Guide](https://msrc.microsoft.com/update-guide/)
+* [Azure Security Podcast](https://azsecuritypodcast.net/)
 
-## Practice exams
+## Exam Preparation Tips
 
-* [Whizlabs AZ-500 practice exams](https://www.whizlabs.com/microsoft-azure-certification-az-500/)
-* [MeasureUp AZ-500 practice exams](https://www.measureup.com/az-500-microsoft-azure-security-technologies.html)
-* [Tim's practice exam comparison](https://www.youtube.com/watch?v=_aH4DbpcJWA&t=2s)
-
-## Exam-Specific Information
-
-* [AZ-500 exam page](https://docs.microsoft.com/en-us/learn/certifications/exams/az-500)
-* [Microsoft Certification Exam Offers](https://www.microsoft.com/en-us/learning/offers.aspx)
-* [Microsoft Online Exams](https://www.microsoft.com/en-us/learning/online-exams.aspx)
-* [Pearson OnVUE Information](https://home.pearsonvue.com/Clients/Microsoft/Online-proctored.aspx)
-* [Tim's online testing tutorial (YouTube)](https://www.youtube.com/watch?v=myf6r5nulj0)
-* [Exam scoring and score reports](https://docs.microsoft.com/en-us/learn/certifications/exam-scoring-reports)
-* [Pearson VUE Grievance](https://home.pearsonvue.com/microsoft/contact)
-* [Microsoft Policies and FAQs](https://docs.microsoft.com/en-us/learn/certifications/certification-exam-policies)
+* Focus on hands-on experience with Azure security features
+* Practice implementing security controls across different Azure services
+* Understand identity and access management deeply
+* Master Azure security tools and monitoring capabilities
+* Review real-world security scenarios and best practices

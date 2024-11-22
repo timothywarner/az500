@@ -1,0 +1,128 @@
+#!/bin/bash
+# AZ-500 Security Implementation Example
+# Purpose: Demonstrates security hardening and auditing across multiple Azure services
+
+# Set variables
+RG_NAME="SecurityAuditRG"
+LOCATION="eastus"
+STORAGE_ACCOUNT="securityauditsa$RANDOM"
+KEYVAULT_NAME="security-kv-$RANDOM"
+NSG_NAME="security-nsg"
+VNET_NAME="security-vnet"
+LOG_ANALYTICS_WORKSPACE="security-law"
+
+# Create Resource Group with tags for compliance
+az group create \
+    --name $RG_NAME \
+    --location $LOCATION \
+    --tags "Environment=Production" "DataClassification=Confidential" "ComplianceRequired=HIPAA"
+
+# Create VNet with custom subnet configuration
+az network vnet create \
+    --resource-group $RG_NAME \
+    --name $VNET_NAME \
+    --address-prefix 10.0.0.0/16 \
+    --subnet-name ApplicationSubnet \
+    --subnet-prefix 10.0.1.0/24
+
+# Create NSG with security rules
+az network nsg create \
+    --resource-group $RG_NAME \
+    --name $NSG_NAME
+
+# Add security rules to NSG
+az network nsg rule create \
+    --resource-group $RG_NAME \
+    --nsg-name $NSG_NAME \
+    --name "DenyAllInbound" \
+    --priority 4096 \
+    --direction Inbound \
+    --access Deny \
+    --protocol "*" \
+    --source-address-prefixes "*" \
+    --source-port-ranges "*" \
+    --destination-address-prefixes "*" \
+    --destination-port-ranges "*"
+
+# Create Storage Account with security features
+az storage account create \
+    --name $STORAGE_ACCOUNT \
+    --resource-group $RG_NAME \
+    --location $LOCATION \
+    --sku Standard_GRS \
+    --kind StorageV2 \
+    --https-only true \
+    --min-tls-version TLS1_2 \
+    --allow-blob-public-access false \
+    --enable-hierarchical-namespace true
+
+# Enable Azure Defender for Storage
+az security pricing create \
+    --name "StorageAccounts" \
+    --tier "Standard"
+
+# Create Key Vault with advanced security features
+az keyvault create \
+    --name $KEYVAULT_NAME \
+    --resource-group $RG_NAME \
+    --location $LOCATION \
+    --sku Premium \
+    --enable-rbac-authorization true \
+    --enable-purge-protection true \
+    --retention-days 90
+
+# Enable Key Vault logging
+az monitor diagnostic-settings create \
+    --name "KeyVaultAudit" \
+    --resource $KEYVAULT_NAME \
+    --resource-group $RG_NAME \
+    --resource-type "Microsoft.KeyVault/vaults" \
+    --logs '[{"category": "AuditEvent","enabled": true}]' \
+    --metrics '[{"category": "AllMetrics","enabled": true}]'
+
+# Create Log Analytics Workspace for security monitoring
+az monitor log-analytics workspace create \
+    --resource-group $RG_NAME \
+    --workspace-name $LOG_ANALYTICS_WORKSPACE \
+    --location $LOCATION \
+    --sku PerGB2018
+
+# Enable Microsoft Defender for Cloud
+az security pricing create \
+    --name "VirtualMachines" \
+    --tier "Standard"
+
+# Configure security policies
+az security policy assignment create \
+    --name "SecurityBaselinePolicy" \
+    --display-name "Security Baseline" \
+    --policy-definition-id "/providers/Microsoft.Authorization/policyDefinitions/1f3afdf9-d0c9-4c3d-847f-89da613e70a8"
+
+# Enable JIT VM Access
+az vm jit-policy create \
+    --resource-group $RG_NAME \
+    --location $LOCATION \
+    --vm-name "sample-vm" \
+    --jit-policy "{'jitNetworkAccessPolicy':{'virtualMachines':[{'id':'/subscriptions/{subscription-id}/resourceGroups/$RG_NAME/providers/Microsoft.Compute/virtualMachines/sample-vm','ports':[{'number':22,'protocol':'*','allowedSourceAddressPrefix':'*','maxRequestAccessDuration':'PT3H'}]}]}}"
+
+# Enable diagnostic settings for Activity Log
+az monitor diagnostic-settings create \
+    --name "SecurityAudit" \
+    --resource-group $RG_NAME \
+    --logs '[{"category": "Administrative","enabled": true},{"category": "Security","enabled": true}]' \
+    --workspace $LOG_ANALYTICS_WORKSPACE
+
+# Export security recommendations
+az security assessment list \
+    --resource-group $RG_NAME \
+    --query "[].{Name:name, Status:status.code, Description:metadata.description}" \
+    --output table
+
+# Configure custom security alerts
+az monitor activity-log alert create \
+    --name "SecurityAlert" \
+    --resource-group $RG_NAME \
+    --condition category="Security" \
+    --action-group "/subscriptions/{subscription-id}/resourceGroups/$RG_NAME/providers/microsoft.insights/actionGroups/SecurityTeam"
+
+echo "Security configuration completed. Review the Microsoft Defender for Cloud dashboard for security recommendations."
