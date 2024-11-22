@@ -22,7 +22,6 @@ Last updated November 21, 2024
 - [Manage identity and access](https://learn.microsoft.com/en-us/training/paths/manage-identity-access/)
 - [Implement platform protection](https://learn.microsoft.com/en-us/training/paths/implement-platform-protection/)
 - [Manage security operations](https://learn.microsoft.com/en-us/training/paths/manage-security-operations/)
-- [Secure data and applications](https://learn.microsoft.com/en-us/training/paths/az-500-secure-data-applications/)
 
 ## 🛡️ Security Best Practices
 ### Identity & Access Management
@@ -42,7 +41,6 @@ Last updated November 21, 2024
 
 ## 🔧 Tools & Development Resources
 ### VS Code Extensions
-- [Microsoft Defender for Cloud](https://marketplace.visualstudio.com/items?itemName=MS-Azure-Defender.azure-security-center)
 - [Security IntelliSense](https://marketplace.visualstudio.com/items?itemName=azsdktm.SecurityIntelliSense)
 - [Snyk Security](https://marketplace.visualstudio.com/items?itemName=snyk-security.snyk-vulnerability-scanner)
 - [Azure Account](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account)
