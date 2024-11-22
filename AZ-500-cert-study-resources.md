@@ -1,8 +1,6 @@
 # Exam AZ-500 Certification Study Resources
 
-Last updated: March 26, 2024
-
-
+Last updated: November 22, 2024
 
 ## Theoretical Knowledge
 

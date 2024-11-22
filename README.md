@@ -1,6 +1,6 @@
 # 🛡️ Exam AZ-500 Certification Study Resources
 
-Last updated November 21, 2024
+This file was last updated: November 22, 2024
 
 ## 📋 Table of Contents
 - 🎯 [Exam-Specific Resources](#exam-specific-resources)
@@ -13,9 +13,9 @@ Last updated November 21, 2024
 - 📱 [Community & Support](#community--support)
 
 ## 🎯 Exam-Specific Resources
-- [AZ-500 Study Guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-500)
+- [AZ-500 Study Guide (2024)](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-500)
 - [AZ-500 Free Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/azure-security-engineer/practice/assessment?assessment-type=practice)
-- [AZ-500 Exam Sandbox](https://aka.ms/examdemo)
+- [Microsoft Learning AZ-500 Labs](https://microsoftlearning.github.io/AZ500-AzureSecurityTechnologies/)
 - [Official Microsoft Learning Path](https://learn.microsoft.com/en-us/training/courses/az-500t00)
 
 ## 📚 Microsoft Learn Paths
@@ -88,3 +88,54 @@ Last updated November 21, 2024
 - **Website**: [techtrainertim.com](https://techtrainertim.com)
 - **Bluesky**: [@techtrainertim](https://bsky.app/profile/techtrainertim.bsky.social)
 - **Mastodon**: [@techtrainertim](https://mastodon.social/@techtrainertim)
+
+## 📚 New & Updated Learning Paths
+- [Secure Azure services and workloads](https://learn.microsoft.com/en-us/training/paths/secure-azure-services-workloads/)
+- [Configure security for hybrid environments](https://learn.microsoft.com/en-us/training/paths/configure-security-for-hybrid-environments/)
+- [Microsoft Defender for Cloud Implementation](https://learn.microsoft.com/en-us/training/paths/implement-microsoft-defender-for-cloud/)
+
+## 🛡️ 2024 Security Focus Areas
+### Zero Trust Security
+- [Microsoft Zero Trust Implementation Guide](https://learn.microsoft.com/en-us/security/zero-trust/)
+- [Azure Zero Trust Network Architecture](https://learn.microsoft.com/en-us/security/zero-trust/azure-infrastructure)
+- [Zero Trust Deployment Center](https://learn.microsoft.com/en-us/security/zero-trust/deploy/)
+
+### Cloud-Native Security
+- [Microsoft Entra Workload ID](https://learn.microsoft.com/en-us/entra/workload-id/)
+- [Azure Container Apps Security](https://learn.microsoft.com/en-us/azure/container-apps/security-concept)
+- [Azure Kubernetes Service (AKS) Security](https://learn.microsoft.com/en-us/azure/aks/concepts-security)
+
+### AI Security & Governance
+- [Azure OpenAI Service Security](https://learn.microsoft.com/en-us/azure/ai-services/openai/security)
+- [Responsible AI Guidelines](https://learn.microsoft.com/en-us/azure/ai-services/responsible-ai-standards)
+- [AI Security Best Practices](https://learn.microsoft.com/en-us/security/ai-security/)
+
+## 🔧 New Tools & Resources (2024)
+### Security Assessment Tools
+- [Microsoft Defender External Attack Surface Management](https://learn.microsoft.com/en-us/defender/external-attack-surface-management/)
+- [Microsoft Sentinel Solution for IoT](https://learn.microsoft.com/en-us/azure/sentinel/iot-solution)
+- [Azure Security Benchmark v3](https://learn.microsoft.com/en-us/security/benchmark/azure/overview)
+
+### DevSecOps Tools
+- [GitHub Advanced Security](https://docs.github.com/en/enterprise-cloud@latest/code-security/getting-started/github-security-features)
+- [Azure DevOps Security Scanner](https://learn.microsoft.com/en-us/azure/devops/organizations/security/security-scanner)
+- [Microsoft Defender for DevOps](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-devops-introduction)
+
+## 💻 Modern Practice Scenarios
+- Multi-cloud Security Configuration
+- Zero Trust Implementation
+- Microservices Security Architecture
+- Container and Kubernetes Security
+- AI/ML Workload Protection
+- IoT Security Implementation
+
+## 📱 Additional Resources
+### Security Blogs & Channels
+- [Microsoft Security Insider](https://www.microsoft.com/security/blog/topic/security-insider/)
+- [Azure Security Center Tech Community](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/bd-p/MicrosoftDefenderCloudBlog)
+- [Microsoft Security YouTube Channel](https://www.youtube.com/@MSFTSecurity)
+
+### Training Platforms
+- [Microsoft Virtual Training Days](https://events.microsoft.com/en-us/mvtd)
+- [Microsoft Learn TV](https://learn.microsoft.com/en-us/shows/browse)
+- [Cloud Skills Challenge](https://learn.microsoft.com/en-us/training/challenges)

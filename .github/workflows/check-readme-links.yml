@@ -1,4 +1,4 @@
-name: Check README Links
+name: Check Markdown Links
 
 on:
   push:
@@ -16,8 +16,10 @@ jobs:
         id: lychee
         uses: lycheeverse/lychee-action@v1.9.3
         with:
-          args: --verbose --no-progress README.md
+          args: --verbose --no-progress './*.md'
           fail: true
+          format: markdown
+          output: ./lychee/out.md
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -28,3 +30,11 @@ jobs:
           title: Link Checker Report 🔗
           content-filepath: ./lychee/out.md
           labels: report, automated issue
+          body: |
+            A link checker scan has found broken links in the repository's markdown files.
+            
+            ### Files Scanned
+            - All markdown (*.md) files in the root directory
+            
+            ### Results
+            See below for the detailed report of broken links:
