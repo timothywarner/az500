@@ -1,6 +1,12 @@
 # 🛡️ Exam AZ-500 Certification Study Resources
 
-This file was last updated: November 22, 2024
+This file was last updated: November 23, 2024
+
+## Contact info
+
+- timw.info/linkedin
+- techtrainertim.com
+- timw.info/az500
 
 ## 📋 Table of Contents
 - 🎯 [Exam-Specific Resources](#exam-specific-resources)
