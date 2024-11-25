@@ -59,7 +59,6 @@ This file was last updated: November 22, 2024
 
 ## ✍️ Practice Tests & Exam Prep
 - [MeasureUp AZ-500](https://www.measureup.com/az-500-microsoft-azure-security-technologies.html)
-- [Whizlabs AZ-500](https://www.whizlabs.com/microsoft-azure-certification-az-500/)
 - [Udemy Practice Tests](https://www.udemy.com/topic/microsoft-az-500/)
 
 ## 🎓 Related Certifications
