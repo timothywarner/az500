@@ -4,6 +4,9 @@
 
 Welcome to the training hub for preparing for the **AZ-500 Microsoft Azure Security Technologies Exam**. Whether you're aiming for certification or deepening your Azure security knowledge, this guide is packed with the best tools, links, and tips to set you up for success.
 
+👉 **New to this repo?** Check out the [Getting Started Guide](GETTING-STARTED.md) for navigation help!  
+📋 **Looking for the course plan?** View the [AZ-500 Crash Course Plan](AZ-500-course-plan.md)!
+
 *Last updated: March 18, 2025*
 
 ---
@@ -15,6 +18,33 @@ Welcome to the training hub for preparing for the **AZ-500 Microsoft Azure Secur
 - **[YouTube Channel](https://www.youtube.com/channel/UCim7PFtynyPuzMHtbNyYOXA)**
 - **[Bluesky](https://bsky.app/profile/techtrainertim.bsky.social)**
 - **[Mastodon](https://mastodon.social/@techtrainertim)**
+
+---
+
+## 📆 **Course Plan Overview**
+This crash course is structured into 4 segments, each approximately 1 hour:
+
+1. **Secure Identity and Access (15-20%)**
+   - Microsoft Entra ID management, MFA, Conditional Access
+   - Role assignments, custom roles, Privileged Identity Management
+   - Application access and managed identities
+
+2. **Secure Networking (20-25%)**
+   - NSGs, ASGs, Virtual Network Manager, UDRs
+   - Private access via Service Endpoints and Private Link
+   - Public access security with Azure Firewall, Front Door, WAF
+
+3. **Secure Compute, Storage, and Databases (20-25%)**
+   - VM and container security (AKS, ACI, ACA)
+   - Storage security, access control, and encryption
+   - SQL Database and Managed Instance security
+
+4. **Defender for Cloud and Microsoft Sentinel (30-35%)**
+   - Cloud governance policies and Key Vault
+   - Security posture management with Defender for Cloud
+   - Threat protection and security monitoring
+
+💡 **See the full [detailed course plan](AZ-500-course-plan.md) for complete information!**
 
 ---
 
@@ -221,6 +251,7 @@ Essential tools to follow along and practice efficiently:
 
 ## 💻 **Hands-on Labs & Practice**
 Learn through hands-on experience:
+- **[Lab Environment Setup Guide](labs/LAB-SETUP.md)** - Start here to prepare for labs!
 - [Microsoft Security Assessment](https://www.microsoft.com/en-us/security/business/security-assessment)
 - [Microsoft Defender for Cloud Workflow Automation](https://learn.microsoft.com/en-us/azure/defender-for-cloud/workflow-automation)
 - [Microsoft Secure Score](https://security.microsoft.com/securescore)
