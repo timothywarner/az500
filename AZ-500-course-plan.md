@@ -7,20 +7,22 @@
 
 ---
 
-## 🛡️ Segment 1: Manage Identity and Access (25–30%)
+## 🔐 Segment 1: Secure Identity and Access (15-20%)
 - **🔑 Microsoft Entra Management**  
-  - Manage users and groups  
+  - Manage security controls for identity and access
   - Implement multi-factor authentication (MFA)  
-  - Configure passwordless authentication  
-  - Implement Conditional Access policies  
+  - Configure Conditional Access policies  
+  - Plan and manage resources in Privileged Identity Management
 
 - **🗝️ Role Management**  
-  - Assign and manage Azure roles  
-  - Configure Privileged Identity Management (PIM)  
-  - Create custom roles  
+  - Manage Azure built-in role assignments
+  - Create and manage custom roles
+  - Implement Microsoft Entra Permissions Management
 
 - **🔐 Application Access**  
-  - Manage app registrations and OAuth permissions  
+  - Manage access to enterprise applications in Microsoft Entra ID  
+  - Configure app registration permission scopes and consent
+  - Manage and use service principals
   - Configure managed identities for Azure resources  
 
 ---
@@ -28,52 +30,82 @@
 ## 🌐 Segment 2: Secure Networking (20–25%)
 - **🔒 Virtual Network Security**  
   - Configure Network Security Groups (NSGs) and Application Security Groups (ASGs)  
-  - Plan and implement Virtual Network peering and VPN gateways  
+  - Manage networks with Azure Virtual Network Manager
+  - Plan and implement user-defined routes (UDRs)
+  - Configure VPN connectivity and peering
+  - Implement Virtual WAN with secured virtual hub
   - Monitor security with Network Watcher  
 
 - **🛡️ Private Access**  
+  - Plan and implement virtual network Service Endpoints
   - Configure Private Endpoints and Private Link services  
-  - Plan secure access to Azure App Services and Functions  
+  - Implement network integration for App Service and Functions
+  - Configure network security for App Service Environment
+  - Secure Azure SQL Managed Instance
 
 - **🚀 Public Access Security**  
-  - Implement Azure Firewall and Web Application Firewall (WAF)  
-  - Use Azure DDoS Protection Standard  
+  - Implement TLS for applications
+  - Configure Azure Firewall and Firewall Manager
+  - Deploy Azure Application Gateway and Azure Front Door
+  - Implement Web Application Firewall (WAF)  
+  - Deploy Azure DDoS Protection Standard  
 
 ---
 
 ## 💾 Segment 3: Secure Compute, Storage, and Databases (20–25%)
 - **🖥️ Compute Security**  
-  - Plan secure remote access (Azure Bastion, JIT VM access)  
-  - Configure AKS network isolation and monitoring  
-  - Manage container security (ACI, ACR, ACA)  
+  - Configure remote access with Azure Bastion and just-in-time VM access
+  - Secure Azure Kubernetes Service (AKS)
+  - Configure security monitoring for containers (ACI, ACA)
+  - Manage access to Azure Container Registry (ACR)
+  - Implement disk encryption options
+  - Secure Azure API Management
 
 - **🗄️ Storage Security**  
   - Configure access control for storage accounts  
-  - Enable encryption (ADE, BYOK, double encryption)  
-  - Protect data with soft delete, backups, and versioning  
+  - Manage storage account access keys
+  - Configure secure access for Azure Files and Blob Storage
+  - Protect data with soft delete, backups, versioning, and immutable storage
+  - Configure Bring Your Own Key (BYOK)
+  - Enable double encryption at the Azure Storage infrastructure level
 
 - **📊 Database Security**  
-  - Enable database auditing and data classification  
-  - Configure Transparent Data Encryption (TDE)  
-  - Implement Always Encrypted for Azure SQL  
+  - Enable Microsoft Entra database authentication
+  - Configure database auditing and dynamic masking
+  - Implement Transparent Data Encryption (TDE)  
+  - Configure Azure SQL Database Always Encrypted
 
 ---
 
-## 🔍 Segment 4: Manage Security Operations (25–30%)
-- **⚙️ Governance and Compliance**  
-  - Create and assign security policies with Azure Policy  
-  - Configure secure infrastructures with Blueprints  
-  - Manage Key Vault access and key rotation  
+## 🔍 Segment 4: Secure Azure using Microsoft Defender for Cloud and Microsoft Sentinel (30–35%)
+- **⚙️ Cloud Governance Policies**  
+  - Create and assign Azure Policy initiatives
+  - Configure Key Vault network settings and access control
+  - Manage certificates, secrets, and keys
+  - Configure key rotation
+  - Implement backup/recovery for sensitive data
+  - Configure security controls for asset management
 
-- **🛠️ Microsoft Defender for Cloud**  
-  - Assess risks using Secure Score  
-  - Enable workload protection (Storage, SQL, Containers)  
-  - Remediate vulnerabilities and monitor alerts  
+- **🛠️ Security Posture Management**  
+  - Work with Microsoft Defender for Cloud Secure Score
+  - Assess compliance against security frameworks
+  - Manage compliance standards
+  - Connect hybrid and multi-cloud environments
+  - Implement Microsoft Defender External Attack Surface Management (EASM)
 
-- **📈 Monitoring and Automation**  
-  - Configure Microsoft Sentinel analytics and data connectors  
-  - Respond to incidents and automate workflows  
-  - Evaluate vulnerability scans and alerts  
+- **🔒 Threat Protection**  
+  - Enable Microsoft Defender workload protection services
+  - Configure Defender for Servers, Databases, and Storage
+  - Implement agentless scanning for VMs
+  - Configure Defender Vulnerability Management
+  - Connect DevOps security for GitHub, Azure DevOps, and GitLab
+
+- **📈 Security Monitoring and Automation**  
+  - Manage security alerts in Defender for Cloud
+  - Configure workflow automation
+  - Set up data collection rules (DCRs) in Azure Monitor
+  - Configure Microsoft Sentinel data connectors and analytics
+  - Implement Microsoft Sentinel automation
 
 ---
 
@@ -96,30 +128,34 @@ You're a security engineer at Contoso Ltd, tasked with securing a new three-tier
 ### 🔄 Implementation Steps
 
 #### 1. Identity & Access Setup (30 mins)
-- Configure Azure AD authentication for the web app
+- Configure Microsoft Entra authentication for the web app
 - Set up managed identities for service-to-service communication
 - Implement Conditional Access policy for admin access
+- Configure Privileged Identity Management for just-in-time admin access
 
 #### 2. Network Security (30 mins)
-- Create network isolation using VNets and NSGs
-- Configure Private Endpoints for the database
+- Create network isolation using VNets, NSGs, and ASGs
+- Implement Private Endpoints for the database
 - Set up Azure Application Gateway with WAF
+- Configure Azure Front Door with CDN
 
 #### 3. Data Protection (30 mins)
 - Enable TDE and Always Encrypted for sensitive data
-- Configure backup policies and soft delete
-- Implement key rotation using Key Vault
+- Configure Key Vault with RBAC and network restrictions
+- Implement immutable storage and soft delete
+- Configure double encryption for storage
 
-#### 4. Monitoring & Response (30 mins)
-- Set up Microsoft Defender for Cloud
-- Configure diagnostic settings and log analytics
-- Create custom alert rules in Microsoft Sentinel
+#### 4. Security Monitoring & Protection (30 mins)
+- Set up Microsoft Defender for Cloud workload protections
+- Configure Microsoft Sentinel data connectors and analytics rules
+- Create automation workflows for common security incidents
+- Implement vulnerability scanning and management
 
 ### 🎯 Success Criteria
 - ✅ All services use managed identities for authentication
-- ✅ No direct public access to backend services
+- ✅ Private network connectivity between services
 - ✅ All sensitive data encrypted at rest and in transit
-- ✅ Comprehensive logging and monitoring in place
+- ✅ Comprehensive detection and response capabilities
 
 ## Additional Resources
 

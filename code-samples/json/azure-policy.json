@@ -1,0 +1,88 @@
+{
+    "mode": "Indexed",
+    "policyRule": {
+        "if": {
+            "allOf": [
+                {
+                    "field": "type",
+                    "equals": "Microsoft.Web/sites"
+                }
+            ]
+        },
+        "then": {
+            "effect": "deployIfNotExists",
+            "details": {
+                "type": "Microsoft.Web/sites",
+                "name": "[field('name')]",
+                "roleDefinitionIds": [
+                    "/providers/Microsoft.Authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c" // Contributor role
+                ],
+                "existenceCondition": {
+                    "allOf": [
+                        {
+                            "field": "identity.type",
+                            "contains": "UserAssigned"
+                        },
+                        {
+                            "field": "identity.userAssignedIdentities",
+                            "exists": "true"
+                        }
+                    ]
+                },
+                "deployment": {
+                    "properties": {
+                        "mode": "Incremental",
+                        "template": {
+                            "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+                            "contentVersion": "1.0.0.0",
+                            "parameters": {
+                                "webAppName": {
+                                    "type": "string"
+                                },
+                                "location": {
+                                    "type": "string"
+                                },
+                                "userAssignedIdentityName": {
+                                    "type": "string",
+                                    "defaultValue": "[concat(parameters('webAppName'), '-identity')]"
+                                }
+                            },
+                            "resources": [
+                                {
+                                    "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
+                                    "apiVersion": "2018-11-30",
+                                    "name": "[parameters('userAssignedIdentityName')]",
+                                    "location": "[parameters('location')]"
+                                },
+                                {
+                                    "type": "Microsoft.Web/sites",
+                                    "apiVersion": "2022-03-01",
+                                    "name": "[parameters('webAppName')]",
+                                    "location": "[parameters('location')]",
+                                    "identity": {
+                                        "type": "UserAssigned",
+                                        "userAssignedIdentities": {
+                                            "[resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', parameters('userAssignedIdentityName'))]": {}
+                                        }
+                                    },
+                                    "dependsOn": [
+                                        "[resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', parameters('userAssignedIdentityName'))]"
+                                    ]
+                                }
+                            ]
+                        },
+                        "parameters": {
+                            "webAppName": {
+                                "value": "[field('name')]"
+                            },
+                            "location": {
+                                "value": "[field('location')]"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "parameters": {}
+}

@@ -1,0 +1,40 @@
+{
+    "Name": "Security Operations Analyst Custom Role",
+    "IsCustom": true,
+    "Description": "Allows security operations team to monitor security-related resources, manage security alerts, and perform specific remediation actions while maintaining separation of duties.",
+    "Actions": [
+        "Microsoft.Security/alerts/read",
+        "Microsoft.Security/securitySolutions/read",
+        "Microsoft.Security/policies/read",
+        "Microsoft.Security/pricings/read",
+        "Microsoft.Security/settings/read",
+        "Microsoft.Security/assessments/read",
+        "Microsoft.Network/networkWatchers/read",
+        "Microsoft.Network/networkSecurityGroups/read",
+        "Microsoft.KeyVault/vaults/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+    ],
+    "NotActions": [
+        "Microsoft.KeyVault/vaults/delete",
+        "Microsoft.KeyVault/vaults/write",
+        "Microsoft.Network/networkSecurityGroups/write",
+        "Microsoft.Network/networkSecurityGroups/delete"
+    ],
+    "DataActions": [
+        "Microsoft.KeyVault/vaults/secrets/read",
+        "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/read",
+        "Microsoft.Insights/Logs/Read"
+    ],
+    "NotDataActions": [
+        "Microsoft.KeyVault/vaults/secrets/write",
+        "Microsoft.KeyVault/vaults/secrets/delete",
+        "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/write",
+        "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/delete"
+    ],
+    "AssignableScopes": [
+        "/subscriptions/00000000-0000-0000-0000-000000000000",
+        "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/SecurityOperations",
+        "/providers/Microsoft.Management/managementGroups/SecurityTeam"
+    ]
+}
