@@ -143,7 +143,7 @@ As an Azure security engineer, you implement, manage, and monitor security for r
 - Configure Microsoft Defender for Servers, Microsoft Defender for Databases, and Microsoft Defender for Storage
 - Implement and manage agentless scanning for virtual machines in Microsoft Defender for Servers
 - Implement and manage Microsoft Defender Vulnerability Management for Azure virtual machines
-- Connect to and configure settings in Microsoft Defender for Cloud Devops Security, including GitHub, Azure DevOps, and GitLab
+- Connect to and configure settings in Microsoft Defender for Cloud DevOps Security, including GitHub, Azure DevOps, and GitLab
 
 ##### 4.4 Configure and manage security monitoring and automation solutions
 - Manage and respond to security alerts in Microsoft Defender for Cloud
@@ -157,7 +157,7 @@ As an Azure security engineer, you implement, manage, and monitor security for r
 
 ## 🚀 **The Good Stuff: Must-Have AZ-500 Resources**
 - [AZ-500 Exam Page](https://learn.microsoft.com/en-us/certifications/exams/az-500)
-- [AZ-500 Study Guide (2024)](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-500)
+- [AZ-500 Study Guide (2025)](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-500)
 - [Exam Registration (Microsoft/Pearson VUE)](https://learn.microsoft.com/en-us/credentials/certifications/schedule-through-pearson-vue?examUid=exam.AZ-500)
 - [AZ-500 Free Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/azure-security-engineer/practice/assessment?assessment-type=practice)
 - [Microsoft Learning AZ-500 Labs](https://microsoftlearning.github.io/AZ500-AzureSecurityTechnologies/)
@@ -222,7 +222,7 @@ Essential tools to follow along and practice efficiently:
 ## 💻 **Hands-on Labs & Practice**
 Learn through hands-on experience:
 - [Microsoft Security Assessment](https://www.microsoft.com/en-us/security/business/security-assessment)
-- [Azure Security Center Workflow Automation](https://learn.microsoft.com/en-us/azure/defender-for-cloud/workflow-automation)
+- [Microsoft Defender for Cloud Workflow Automation](https://learn.microsoft.com/en-us/azure/defender-for-cloud/workflow-automation)
 - [Microsoft Secure Score](https://security.microsoft.com/securescore)
 - [Attack Surface Reduction Rules](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/attack-surface-reduction)
 - [Azure Free Account](https://azure.microsoft.com/en-us/free/)
@@ -268,7 +268,7 @@ Expand your Microsoft security credentials:
 
 ---
 
-## 🛡️ **2024 Security Focus Areas**
+## 🛡️ **2025 Security Focus Areas**
 
 ### Zero Trust Security
 - [Microsoft Zero Trust Implementation Guide](https://learn.microsoft.com/en-us/security/zero-trust/)
@@ -292,7 +292,7 @@ Connect with security professionals:
 - [Microsoft Security Community](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/ct-p/SecurityComplianceandIdentity)
 - [Azure Security Podcast](https://azsecuritypodcast.net/)
 - [Microsoft Security Blog](https://www.microsoft.com/security/blog/)
-- [Azure Security Center GitHub Repository](https://github.com/Azure/Azure-Security-Center)
+- [Microsoft Defender for Cloud GitHub Repository](https://github.com/Azure/Microsoft-Defender-for-Cloud)
 - [Microsoft Security YouTube Channel](https://www.youtube.com/@MSFTSecurity)
 
 ---
