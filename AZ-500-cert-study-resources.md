@@ -16,9 +16,9 @@ Last updated: March 2024
 ## Hands-on Labs & Practice
 
 * [Microsoft Learn Labs](https://learn.microsoft.com/en-us/training/paths/manage-security-operations/)
-* [Official AZ-500 Lab Exercises](https://microsoftlearning.github.io/AZ-500-AzureSecurityTechnologies/)
+* [Official AZ-500 Lab Exercises](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies)
 * [Microsoft Azure Free Account](https://azure.microsoft.com/free/)
-* [Azure Citadel Security Labs](https://www.azurecitadel.com/security/)
+* [Azure Citadel Security Labs](https://archive.azurecitadel.com/security/)
 * [Azure Log Analytics Query Playground](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-tutorial)
 
 ## Practice Exams & Test Prep
