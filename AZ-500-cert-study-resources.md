@@ -44,6 +44,7 @@ Last updated: March 2024
 * [Azure Security Center Community](https://techcommunity.microsoft.com/t5/azure-security-center/bd-p/AzureSecurityCenter)
 * [Microsoft Security Update Guide](https://msrc.microsoft.com/update-guide/)
 * [Azure Security Podcast](https://azsecuritypodcast.net/)
+* [Protego Cybersecurity Blog](https://protego.me) - Free cloud security blog with practical guides on Azure Policy, Microsoft Defender for Cloud, Conditional Access, and Entra ID that align with AZ-500 exam domains. Also offers free security tools including a CVE prioritization calculator and cloud recon scanner.
 
 ## Exam Preparation Tips
 
