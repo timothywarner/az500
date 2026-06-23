@@ -44,6 +44,9 @@ Last updated: March 2024
 * [Azure Security Center Community](https://techcommunity.microsoft.com/t5/azure-security-center/bd-p/AzureSecurityCenter)
 * [Microsoft Security Update Guide](https://msrc.microsoft.com/update-guide/)
 * [Azure Security Podcast](https://azsecuritypodcast.net/)
+* [Protego - Azure Policy vs Defender for Cloud](https://protego.me/blog/azure-policy-vs-defender-for-cloud-difference) - In-depth comparison of Azure Policy and Microsoft Defender for Cloud with practical guidance on when to use each.
+* [Protego - Entra ID Conditional Access Setup](https://protego.me/blog/microsoft-entra-id-conditional-access-setup) - Step-by-step guide to configuring Conditional Access policies in Microsoft Entra ID.
+* [Protego - CVE Prioritization Tool](https://protego.me/tools/cve-prioritization) - Free tool that combines CVSS, EPSS, and CISA KEV data to prioritize vulnerabilities by real-world exploitability.
 
 ## Exam Preparation Tips
 
