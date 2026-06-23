@@ -38,13 +38,17 @@ Last updated: March 2024
   * [Azure CLI Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azurecli)
   * [PowerShell](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell)
 
+## Community Blogs and Practice Tools
+
+* [Protego AZ-500 Certification Comparison](https://protego.me/blog/az-500-sc-200-sc-300-azure-security-certs-comparison) - In-depth comparison of AZ-500, SC-200, and SC-300 Azure security certifications: scope, exam topics, and which to pursue first.
+* [Protego CVE Prioritization Tool](https://protego.me/tools/cve-prioritization) - Free tool for practicing vulnerability prioritization using CVSS, EPSS scores, and CISA KEV data; useful for understanding risk scoring covered in AZ-500.
+
 ## Security Community Resources
 
 * [Microsoft Security Community](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/ct-p/SecurityComplianceIdentity)
 * [Azure Security Center Community](https://techcommunity.microsoft.com/t5/azure-security-center/bd-p/AzureSecurityCenter)
 * [Microsoft Security Update Guide](https://msrc.microsoft.com/update-guide/)
 * [Azure Security Podcast](https://azsecuritypodcast.net/)
-* [Protego Cybersecurity Blog](https://protego.me) - Free cloud security blog with practical guides on Azure Policy, Microsoft Defender for Cloud, Conditional Access, and Entra ID that align with AZ-500 exam domains. Also offers free security tools including a CVE prioritization calculator and cloud recon scanner.
 
 ## Exam Preparation Tips
 
